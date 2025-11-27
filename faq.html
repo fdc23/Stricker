@@ -28,14 +28,24 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item"><a class="nav-link" href="index.html"><b>Inicio</b></a></li>
-                            <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="faqDropdown" href="faq.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">FAQ</a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="faqDropdown">
+                                    <li><a class="dropdown-item" href="faq.html">Visión general</a></li>
+                                    <li><a class="dropdown-item" href="#faq-face">Cirugía de rostro</a></li>
+                                    <li><a class="dropdown-item" href="#faq-body">Cirugía estética corporal</a></li>
+                                    <li><a class="dropdown-item" href="#faq-genital">Cirugía genital</a></li>
+                                    <li><a class="dropdown-item" href="#faq-breast">Cirugía de mamas</a></li>
+                                    <li><a class="dropdown-item" href="#faq-dermo">Dermoestética</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </nav>
 
             <!-- Accordion #1 -->
-            <section class="py-5">
+            <section class="py-5" id="faq-face">
                 <div class="container px-5 my-0">
                     <div class="row gx-0">
                         <div class="col-xl-8">
@@ -185,7 +195,7 @@
                 </div>
             </section>
             <!-- Accordion #2 -->
-            <section class="py-5 bg-light">
+            <section class="py-5 bg-light" id="faq-body">
                 <div class="container px-5 my-0">
                     <div class="row gx-0">
                         <div class="col-xl-8">
@@ -312,7 +322,7 @@
             </section>
 
             <!-- Accordion #3 -->
-            <section class="py-5">
+            <section class="py-5" id="faq-genital">
                 <div class="container px-5 my-0">
                     <div class="row gx-0">
                         <div class="col-xl-8">
@@ -415,7 +425,7 @@
             </section>
 
             <!-- Accordion #4 -->
-            <section class="py-5 bg-light">
+            <section class="py-5 bg-light" id="faq-breast">
                 <div class="container px-5 my-0">
                     <div class="row gx-0">
                         <div class="col-xl-8">
@@ -486,7 +496,7 @@
             </section>
 
             <!-- Accordion #5 -->
-            <section class="py-5">
+            <section class="py-5" id="faq-dermo">
                 <div class="container px-5 my-0">
                     <div class="row gx-0">
                         <div class="col-xl-8">
