@@ -8179,7 +8179,7 @@ textarea.form-control-lg {
 .bg-animation {
     position: relative;
     --bs-bg-opacity: 1;
-    background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+    background: linear-gradient(115deg, #0f172a 0%, #0f172a 55%, #f5f7fb 55%, #f5f7fb 100%);
     color: #ffffff;
     overflow: hidden;
 }
@@ -10953,21 +10953,39 @@ html {
 }
 
 .feature {
-  display: inline-flex;
-  align-items: center;
+  display: flex;
   justify-content: center;
-  height: 3rem;
-  width: 3rem;
-  font-size: 1.5rem;
+  align-items: center;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
 }
 
-.bg-featured-blog {
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 15rem;
+.feature img {
+  display: block;
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+}
+
+.feature-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid rgba(13, 110, 253, 0.25);
+  color: #0f2748;
+  font-weight: 600;
+  background: #f7f9ff;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.feature-link:hover {
+  color: #0b1f36;
+  border-color: rgba(13, 110, 253, 0.4);
+  background: #eaf1ff;
+  text-decoration: none;
 }
 
 .instagram-media {
@@ -10977,19 +10995,142 @@ html {
     box-sizing: border-box;
 }
 
-/* Contenedor "feature" compacto */
-.feature {
-    display: flex;
-    justify-content: center; /* centra horizontal */
-    align-items: center; /* centra vertical */
-    padding: 0.75rem; /* acolchado pequeño */
-    border-radius: 0.75rem; /* ya lo tienes desde Bootstrap */
+/* Custom FAQ refinements */
+.faq-hero-bg {
+  background: linear-gradient(135deg, #f5f7fb 0%, #eef3fa 65%, #ffffff 100%);
 }
 
-    /* Imagen = icono centrado y pequeña */
-    .feature img {
-        display: block;
-        width: 64px; /* tamaño del "icono" -> ajusta a gusto (48, 64, 72...) */
-        height: 64px; /* como tus imágenes son 1:1, esto funciona perfecto */
-        object-fit: cover; /* por si alguna no es exactamente cuadrada */
-    }
+.faq-band,
+.faq-band-alt {
+  padding: 3rem 0;
+}
+
+.faq-band {
+  background: #f8f9fb;
+  border-bottom: 1px solid #e8edf5;
+}
+
+.faq-band-alt {
+  background: #ffffff;
+  border-bottom: 1px solid #eef2f7;
+}
+
+.faq-hero-card {
+  padding: 1.75rem;
+  border-radius: 1rem;
+  background: #ffffff;
+  border: 1px solid #e5ebf4;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.04);
+}
+
+.faq-index {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  background: #ffffff;
+  border: 1px solid #e6ebf4;
+  border-radius: 0.75rem;
+  box-shadow: 0 6px 16px rgba(17, 24, 39, 0.03);
+}
+
+.faq-index-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.faq-index-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 0.65rem;
+  font-weight: 600;
+  color: #0f2748;
+  text-decoration: none;
+  background-color: #f5f7fb;
+  border: 1px solid #dbe3ef;
+  transition: all 0.2s ease;
+}
+
+.faq-index-link:hover {
+  color: #0c203d;
+  background-color: #e8eef8;
+  border-color: #c8d4e5;
+}
+
+.faq-block {
+  padding: 1.5rem;
+  border: 1px solid #e4e9f2;
+  border-radius: 1rem;
+  background: #ffffff;
+  box-shadow: 0 8px 26px rgba(15, 23, 42, 0.04);
+}
+
+.faq-section-header {
+  border-bottom: 1px solid #e6ebf3;
+  padding-bottom: 0.55rem;
+  margin-bottom: 1.2rem;
+}
+
+.faq-section-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  letter-spacing: 0.06em;
+  font-size: 0.78rem;
+  color: #0f2748;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.2rem 0.65rem;
+  background: #eaf1fb;
+  border-radius: 999px;
+  margin-bottom: 0.45rem;
+}
+
+.faq-title {
+  font-size: 1.35rem;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  color: #0f172a;
+  margin: 0;
+}
+
+.faq-subtitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #4b5563;
+  margin-bottom: 0.75rem;
+}
+
+.faq-accordion .accordion-item {
+  border: 1px solid #e8ecf5;
+  border-radius: 0.65rem;
+  overflow: hidden;
+  box-shadow: none;
+  margin-bottom: 0.7rem;
+  background-color: #fff;
+}
+
+.faq-accordion .accordion-button {
+  background: #fff;
+  font-weight: 500;
+  color: #16212f;
+}
+
+.faq-accordion .accordion-button:not(.collapsed) {
+  color: #0f4f91;
+  background-color: #f5f8fc;
+  box-shadow: inset 0 -1px 0 #e1e6ef;
+}
+
+.faq-accordion .accordion-body {
+  background-color: #fff;
+  line-height: 1.65;
+}
+
+.faq-accordion .accordion-item:last-of-type {
+  margin-bottom: 0;
+}
