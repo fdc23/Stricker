@@ -15,6 +15,10 @@ document.addEventListener('DOMContentLoaded', () => {
     cvPdfParams;
   let lastCvTrigger = null;
 
+  const instagramEmbeds = document.querySelectorAll('.instagram-media');
+  let instagramScriptLoading = null;
+  let instagramScriptLoaded = false;
+
   const waOverlay = document.getElementById('waOverlay');
   const waFab = document.getElementById('waFab');
   const waCloseBtn = waOverlay ? waOverlay.querySelector('[data-wa-close]') : null;
@@ -29,6 +33,58 @@ document.addEventListener('DOMContentLoaded', () => {
       frame.setAttribute('title', 'Currículum Vitae de Dr. Luciano Stricker');
     });
   }
+
+  const ensureInstagramScript = () => {
+    if (instagramScriptLoaded) return Promise.resolve();
+    if (instagramScriptLoading) return instagramScriptLoading;
+    instagramScriptLoading = new Promise((resolve, reject) => {
+      const script = document.createElement('script');
+      script.src = 'https://www.instagram.com/embed.js';
+      script.async = true;
+      script.defer = true;
+      script.onload = () => {
+        instagramScriptLoaded = true;
+        resolve();
+      };
+      script.onerror = reject;
+      document.body.appendChild(script);
+    });
+    return instagramScriptLoading;
+  };
+
+  const processInstagramEmbeds = () => {
+    if (window.instgrm && window.instgrm.Embeds && typeof window.instgrm.Embeds.process === 'function') {
+      window.instgrm.Embeds.process();
+    }
+  };
+
+  const lazyLoadInstagram = () => {
+    if (!instagramEmbeds.length) return;
+
+    const loadAndProcess = () => {
+      ensureInstagramScript()
+        .then(processInstagramEmbeds)
+        .catch(() => {});
+    };
+
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(
+        (entries, obs) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              loadAndProcess();
+              obs.disconnect();
+            }
+          });
+        },
+        { rootMargin: '200px 0px' }
+      );
+
+      instagramEmbeds.forEach((embed) => observer.observe(embed));
+    } else {
+      loadAndProcess();
+    }
+  };
 
   function closeWaOverlay(event) {
     if (event) event.preventDefault();
@@ -117,6 +173,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+
+  lazyLoadInstagram();
 
   document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape') {

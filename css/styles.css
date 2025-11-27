@@ -8233,6 +8233,20 @@ textarea.form-control-lg {
     filter: blur(0.2px); /* opcional: suaviza un poco */
 }
 
+@media (max-width: 575.98px) {
+    .bg-animation-icon {
+        opacity: 0.05;
+        animation-duration: 48s;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .bg-animation-icon {
+        animation: none !important;
+        opacity: 0.05;
+    }
+}
+
     /* Diferentes posiciones, tamaños y velocidades (efecto parallax simple) */
     .bg-animation-icon.i1 {
         top: 10%;
