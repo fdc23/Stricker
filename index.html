@@ -28,13 +28,40 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item"><a class="nav-link" href="index.html"><b>Inicio</b></a></li>
+                            <!--<li class="nav-item"><a class="nav-link" href="about.html">¿Quienes somos?</a></li>-->
+                            <!--<li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>-->
+                            <!--<li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>-->
                             <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                            <!--<li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Artículos</a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">-->
+                            <!--<li><a class="dropdown-item" href="blog-home.html">Blog Home</a></li>
+                            <li><a class="dropdown-item" href="blog-post.html">Blog Post</a></li>
+                        </ul>
+                    </li>
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b>Portfolio</b></a>
+                                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
+                                                    <li><a class="dropdown-item" href="portfolio-overview.html">Portfolio Overview</a></li>
+                                                    <li><a class="dropdown-item" href="portfolio-item.html">Portfolio Item</a></li>
+                                                </ul>
+                                            </li>-->
                         </ul>
                     </div>
                 </div>
             </nav>
             <!-- Header-->
             <header class="bg-animation py-5">
+                <!-- Capa de iconos flotantes -->
+                <div class="bg-animation-layer">
+                    <span class="bg-animation-icon i1">🩺</span>
+                    <span class="bg-animation-icon i2">🩺</span>
+                    <span class="bg-animation-icon i3">🩺</span>
+                    <span class="bg-animation-icon i4">🩺</span>
+                    <span class="bg-animation-icon i5">🩺</span>
+                </div>
+
+                <!-- Contenido original -->
                 <div class="container px-5">
                     <div class="row gx-5 align-items-center justify-content-center">
                         <div class="col-lg-8 col-xl-7 col-xxl-6">
@@ -63,110 +90,66 @@
             <!-- Features section-->
             <section class="py-5" id="features">
                 <div class="container px-5 my-5">
-                    <div class="text-center mb-4">
-                        <p class="kicker text-uppercase text-primary fw-semibold mb-2">Procedimientos</p>
-                        <h2 class="fw-bolder mb-0">Especialidades destacadas</h2>
-                    </div>
-                    <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3 feature-grid">
-                        <div class="col">
-                            <div class="feature-card h-100 text-center">
-                                <div class="feature text-white mx-auto mb-2">
-                                    <img class="rounded-circle" src="https://cdn.didas.cl/luciano_stricker/I01.webp?raw=true" alt="..." />
-                                </div>
-                                <h2 class="h5 feature-title">Rostro</h2>
-                                <div class="feature-inline-links justify-content-center">
-                                    <a class="feature-inline-link" href="faq.html#proc-blef-sup">Blefaroplastia sup.</a>
-                                    <a class="feature-inline-link" href="faq.html#proc-blef-inf">Blefaroplastia inf.</a>
-                                    <a class="feature-inline-link" href="faq.html#proc-pexia">Pexia de cejas</a>
-                                    <a class="feature-inline-link" href="faq.html#proc-rino">Rinoplastia</a>
-                                </div>
-                                <div class="feature-actions">
-                                    <a class="feature-button" href="faq.html#facial">Ver categoría en FAQ <span aria-hidden="true">→</span></a>
-                                </div>
-                            </div>
+                    <div class="row gx-5">
+                        <div class="col-lg-4 mb-5 mb-lg-0">
+                            <h2 class="fw-bolder mb-0">¿Que tipo de cirugía estás buscando?</h2>
+                            <!--&nbsp;<h3><img class="img-fluid rounded-circle mb-4 px-4" src="https://cdn.didas.cl/luciano_stricker/010.webp?raw=true" alt="..." /></h3>-->
                         </div>
-                        <div class="col">
-                            <div class="feature-card h-100 text-center">
-                                <div class="feature text-white mx-auto mb-2">
-                                    <img class="rounded-circle me-3" src="https://cdn.didas.cl/luciano_stricker/I03.webp?raw=true" alt="..." />
+                        <div class="col-lg-8">
+                            <div class="row gx-5 row-cols-1 row-cols-md-2">
+                                <div class="col mb-5 h-100">
+                                    <div class="feature text-white rounded-3 mb-3">
+                                        <img class="rounded-circle" src="https://cdn.didas.cl/luciano_stricker/I01.webp?raw=true" alt="..." />
+                                        <i class="fa-solid fa-wand-magic-sparkles">‌</i>
+                                    </div>
+                                    <h2 class="h5">Rostro</h2>
+                                    <p class="mb-3">Procedimientos quirúrgicos faciales, tales como blefaroplastia, pexia de cejas, lifting cervicofacial, otoplastia, rinoplastia, bichectomia y aumento de mentón.</p>
+                                    <div class="badge bg-primary rounded-pill mb-0">Ver más...</div>
                                 </div>
-                                <h2 class="h5 feature-title">Mamas</h2>
-                                <div class="feature-inline-links justify-content-center">
-                                    <a class="feature-inline-link" href="faq.html#proc-mam-aumento">Aumento mamario</a>
-                                    <a class="feature-inline-link" href="faq.html#proc-mam-reduccion">Reducción</a>
-                                    <a class="feature-inline-link" href="faq.html#proc-mastopexia">Mastopexia</a>
-                                    <a class="feature-inline-link" href="faq.html#proc-ginecomastia">Ginecomastia</a>
+                                <div class="col mb-5 h-100">
+                                    <div class="feature text-white rounded-3 mb-3">
+                                        <img class="rounded-circle me-3" src="https://cdn.didas.cl/luciano_stricker/I03.webp?raw=true" alt="..." />
+                                        <i class="fa-solid fa-wand-magic-sparkles">‌</i>
+                                    </div>
+                                    <h2 class="h5">Mamas</h2>
+                                    <p class="mb-3">Procedimientos quirúrgicos en mamas, tales como mamoplastia de aumento, mamoplastia de reducción, corrección de asimetría mamaria y mastopexia.</p>
+                                    <div class="badge bg-primary rounded-pill mb-0">Ver más...</div>
                                 </div>
-                                <div class="feature-actions">
-                                    <a class="feature-button" href="faq.html#mamas">Ver categoría en FAQ <span aria-hidden="true">→</span></a>
+                                <div class="col mb-5 h-100">
+                                    <div class="feature text-white rounded-3 mb-3">
+                                        <img class="rounded-circle me-3" src="https://cdn.didas.cl/luciano_stricker/I04.webp?raw=true" alt="..." />
+                                        <i class="fa-solid fa-wand-magic-sparkles">‌</i>
+                                    </div>
+                                    <h2 class="h5">Abdomen</h2>
+                                    <p class="mb-3">Procedimientos Quirúrgicos en Abdomen, tales como Liposucción, Abdominoplastía y Cirugía de Contorno Abdominal.</p>
+                                    <div class="badge bg-primary rounded-pill mb-0">Ver más...</div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="feature-card h-100 text-center">
-                                <div class="feature text-white mx-auto mb-2">
-                                    <img class="rounded-circle me-3" src="https://cdn.didas.cl/luciano_stricker/I04.webp?raw=true" alt="..." />
+                                <div class="col mb-5 h-100">
+                                    <div class="feature text-white rounded-3 mb-3">
+                                        <img class="rounded-circle me-3" src="https://cdn.didas.cl/luciano_stricker/I05.webp?raw=true" alt="..." />
+                                        <i class="fa-solid fa-wand-magic-sparkles">‌</i>
+                                    </div>
+                                    <h2 class="h5">Brazos y Piernas</h2>
+                                    <p class="mb-3">Procedimientos Quirúrgicos en  Brazos y Piernas, tales como Liposucción y Lifting de Brazos.</p>
+                                    <div class="badge bg-primary rounded-pill mb-0">Ver más...</div>
                                 </div>
-                                <h2 class="h5 feature-title">Abdomen</h2>
-                                <div class="feature-inline-links justify-content-center">
-                                    <a class="feature-inline-link" href="faq.html#proc-abdomino">Abdominoplastia</a>
-                                    <a class="feature-inline-link" href="faq.html#proc-lipo">Liposucción</a>
-                                    <a class="feature-inline-link" href="faq.html#proc-lipoabdomino">Lipoabdominoplastia</a>
-                                    <a class="feature-inline-link" href="faq.html#proc-lipo-masculina">Lipoescultura masc.</a>
+                                <div class="col mb-5 mb-md-0 h-100">
+                                    <div class="feature text-white rounded-3 mb-3">
+                                        <img class="rounded-circle me-3" src="https://cdn.didas.cl/luciano_stricker/I02.webp?raw=true" alt="..." />
+                                        <i class="fa-solid fa-wand-magic-sparkles">‌</i>
+                                    </div>
+                                    <h2 class="h5">Glúteos</h2>
+                                    <p class="mb-3">Procedimientos Quirúrgicos en Glúteos, tales como Gluteoplastía y Lipoinyección.</p>
+                                    <div class="badge bg-primary rounded-pill mb-0">Ver más...</div>
                                 </div>
-                                <div class="feature-actions">
-                                    <a class="feature-button" href="faq.html#corporal">Ver categoría en FAQ <span aria-hidden="true">→</span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="feature-card h-100 text-center">
-                                <div class="feature text-white mx-auto mb-2">
-                                    <img class="rounded-circle me-3" src="https://cdn.didas.cl/luciano_stricker/I05.webp?raw=true" alt="..." />
-                                </div>
-                                <h2 class="h5 feature-title">Brazos y piernas</h2>
-                                <div class="feature-inline-links justify-content-center">
-                                    <a class="feature-inline-link" href="faq.html#proc-lifting-muslos">Lifting de muslos</a>
-                                    <a class="feature-inline-link" href="faq.html#proc-lipo">Liposucción</a>
-                                    <a class="feature-inline-link" href="faq.html#proc-pantorrilla">Prótesis pantorrilla</a>
-                                    <a class="feature-inline-link" href="faq.html#proc-pectoral">Implantes pectorales</a>
-                                </div>
-                                <div class="feature-actions">
-                                    <a class="feature-button" href="faq.html#corporal">Ver categoría en FAQ <span aria-hidden="true">→</span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="feature-card h-100 text-center">
-                                <div class="feature text-white mx-auto mb-2">
-                                    <img class="rounded-circle me-3" src="https://cdn.didas.cl/luciano_stricker/I02.webp?raw=true" alt="..." />
-                                </div>
-                                <h2 class="h5 feature-title">Glúteos</h2>
-                                <div class="feature-inline-links justify-content-center">
-                                    <a class="feature-inline-link" href="faq.html#proc-gluteo">Gluteoplastia</a>
-                                    <a class="feature-inline-link" href="faq.html#proc-lipoinyeccion">Lipoinyección</a>
-                                    <a class="feature-inline-link" href="faq.html#proc-lipo">Lipoescultura</a>
-                                    <a class="feature-inline-link" href="faq.html#proc-lipoabdomino-post">Postbariátrica</a>
-                                </div>
-                                <div class="feature-actions">
-                                    <a class="feature-button" href="faq.html#corporal">Ver categoría en FAQ <span aria-hidden="true">→</span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="feature-card h-100 text-center">
-                                <div class="feature text-white mx-auto mb-2">
-                                    <img class="rounded-circle me-3" src="https://cdn.didas.cl/luciano_stricker/I04.webp?raw=true" alt="..." />
-                                </div>
-                                <h2 class="h5 feature-title">Reconstrucción</h2>
-                                <div class="feature-inline-links justify-content-center">
-                                    <a class="feature-inline-link" href="faq.html#proc-lipoabdomino-post">Postbariátrica</a>
-                                    <a class="feature-inline-link" href="faq.html#proc-lipo-masculina">Lipoescultura masc.</a>
-                                    <a class="feature-inline-link" href="faq.html#proc-lifting-muslos">Lifting de muslos</a>
-                                    <a class="feature-inline-link" href="faq.html#proc-lipoinyeccion">Lipoinyección</a>
-                                </div>
-                                <div class="feature-actions">
-                                    <a class="feature-button" href="faq.html#corporal">Ver categoría en FAQ <span aria-hidden="true">→</span></a>
+                                <div class="col h-100">
+                                    <div class="feature text-white rounded-3 mb-3">
+                                        <img class="rounded-circle me-3" src="https://cdn.didas.cl/luciano_stricker/I04.webp?raw=true" alt="..." />
+                                        <i class="fa-solid fa-wand-magic-sparkles">‌</i>
+                                    </div>
+                                    <h2 class="h5">Reconstructivo</h2>
+                                    <p class="mb-3">Procedimientos Quirúrgicos Reconstructivos, tales como Reconstrucción Corporal, (piernas, brazos, abdomen, cara, entre otros), Plastia de cicatrices inestéticas, Úlceras por Presión, Quemaduras y sus Secuelas y Rellenos de defectos de volumen.</p>
+                                    <div class="badge bg-primary rounded-pill mb-0">Ver más...</div>
                                 </div>
                             </div>
                         </div>
@@ -233,6 +216,7 @@
                         <div class="row gx-5">
                             <div class="col-lg-4 mb-5">
                                 <div class="card h-100 shadow border-0">
+                                    <!---<img class="card-img-top" src="https://cdn.didas.cl/luciano_stricker/011.webp?raw=true" alt="..." />-->
                                     <blockquote class="instagram-media"
                                                 data-instgrm-captioned
                                                 data-instgrm-permalink="https://www.instagram.com/reel/DOY7I3jDs7v/"
@@ -261,6 +245,7 @@
                             </div>
                             <div class="col-lg-4 mb-5">
                                 <div class="card h-100 shadow border-0">
+                                    <!--<img class="card-img-top" src="https://dummyimage.com/600x350/adb5bd/495057" alt="..." />-->
                                     <blockquote class="instagram-media"
                                                 data-instgrm-captioned
                                                 data-instgrm-permalink="https://www.instagram.com/reel/DNzA05c0gt3/"
@@ -286,6 +271,7 @@
                             </div>
                             <div class="col-lg-4 mb-5">
                                 <div class="card h-100 shadow border-0">
+                                    <!--<img class="card-img-top" src="https://dummyimage.com/600x350/6c757d/343a40" alt="..." />-->
                                     <blockquote class="instagram-media"
                                                 data-instgrm-captioned
                                                 data-instgrm-permalink="https://www.instagram.com/reel/DQCb4wojpmw/"
@@ -340,6 +326,13 @@
                                     <h5 class="fw-bolder">Lorem Ipsum</h5>
                                     <div class="fst-italic text-muted">Enfermera</div>
                                 </div>
+                                <!--<div class="col mb-5 mb-5 mb-xl-0">
+                            <div class="text-center">
+                                <img class="img-fluid rounded-circle mb-4 px-4" src="https://dummyimage.com/150x150/ced4da/6c757d" alt="..." />
+                                <h5 class="fw-bolder">Felipe Del Curto</h5>
+                                <div class="fst-italic text-muted">Animador Digital, Programador Web &amp; Productor Audiovisual</div>
+                            </div>
+                        </div>-->
                             </div>
                         </div>
                     </div>
