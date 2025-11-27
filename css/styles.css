@@ -10979,56 +10979,63 @@ html {
   color: rgb(var(--bs-pinky-rgb));
 }
 
-.faq-sticky {
-  top: 6rem;
+.clinical-index {
+  background-color: #ffffff;
+  border: 1px solid #e5e9f1;
+  border-radius: 0.85rem;
+  padding: 1rem 1.25rem;
 }
 
-.bg-soft-primary {
-  background-color: rgba(var(--bs-primary-rgb), 0.08) !important;
-}
-
-.clinical-nav {
-  border: 1px solid #e3e8ef;
-  border-radius: 1rem;
-}
-
-.clinical-nav .branch-label {
+.clinical-index .index-label {
   font-weight: 600;
-  color: #1f2933;
+  font-size: 0.9rem;
+  margin-bottom: 0.45rem;
 }
 
-.clinical-nav .branch-subtext {
-  color: #6c757d;
-  font-size: 0.92rem;
-  margin-top: 0.15rem;
+.index-chip {
+  border: 1px solid #d7e3f3;
+  border-radius: 999px;
+  padding: 0.35rem 0.9rem;
+  color: #0f4f91;
+  background-color: #f7fbff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.15s ease;
 }
 
-.clinical-nav .btn-outline-primary {
-  border-color: #d8e6f5;
+.index-chip:hover {
+  background-color: #e8f1fb;
+  border-color: #c7d7ee;
+  color: #0b3f74;
 }
 
-.clinical-nav .badge {
+.section-kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 0.85rem;
+  color: #4b5563;
   font-weight: 600;
 }
 
 .faq-accordion .accordion-item {
-  border: 1px solid #e7ecf3;
-  border-radius: 0.75rem;
+  border: 1px solid #e5e9f1;
+  border-radius: 0.7rem;
   overflow: hidden;
-  box-shadow: 0 8px 28px rgba(15, 23, 42, 0.06);
+  box-shadow: none;
   margin-bottom: 0.75rem;
+  background-color: #fff;
 }
 
 .faq-accordion .accordion-button {
-  background: #fdfefe;
-  font-weight: 600;
+  background: #fff;
+  font-weight: 500;
   color: #1f2933;
 }
 
 .faq-accordion .accordion-button:not(.collapsed) {
-  color: #0f62a9;
-  background-color: #f1f6fb;
-  box-shadow: none;
+  color: #0f4f91;
+  background-color: #f3f7fc;
+  box-shadow: inset 0 -1px 0 #e5e9f1;
 }
 
 .faq-accordion .accordion-body {
