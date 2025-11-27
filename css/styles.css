@@ -11038,6 +11038,11 @@ html {
   gap: 0.5rem 1.25rem;
 }
 
+.cv-section p,
+.cv-section li {
+  text-align: justify;
+}
+
 @media (min-width: 768px) {
   .cv-contact-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -11074,14 +11079,14 @@ html {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding-left: 1.75rem;
+  padding-left: 1.5rem;
 }
 
 .cv-vertical-timeline:before {
   content: "";
   position: absolute;
-  top: 0.5rem;
-  left: 0.6rem;
+  top: 0.35rem;
+  left: 0.45rem;
   width: 3px;
   height: 100%;
   background: linear-gradient(180deg, #d63384, #ff7fb9);
@@ -11091,7 +11096,7 @@ html {
 .cv-vertical-item {
   position: relative;
   display: grid;
-  grid-template-columns: 130px 1fr;
+  grid-template-columns: minmax(95px, 140px) 1fr;
   gap: 0.75rem 1rem;
   align-items: start;
 }
@@ -11099,10 +11104,10 @@ html {
 .cv-vertical-item:before {
   content: "";
   position: absolute;
-  top: 0.65rem;
-  left: 0.2rem;
-  width: 1rem;
-  height: 1rem;
+  top: 0.6rem;
+  left: -0.05rem;
+  width: 0.9rem;
+  height: 0.9rem;
   border-radius: 50%;
   background: #d63384;
   box-shadow: 0 0 0 8px rgba(214, 51, 132, 0.14);
@@ -11112,6 +11117,7 @@ html {
   font-weight: 800;
   color: #d63384;
   letter-spacing: 0.02em;
+  text-align: right;
 }
 
 .cv-entry-card {
@@ -11140,7 +11146,7 @@ html {
 
 @media (max-width: 575.98px) {
   .cv-vertical-timeline {
-    padding-left: 1.3rem;
+    padding-left: 1.35rem;
   }
 
   .cv-vertical-timeline:before {
@@ -11148,16 +11154,12 @@ html {
   }
 
   .cv-vertical-item {
-    grid-template-columns: 1fr;
-    padding-left: 1.2rem;
+    grid-template-columns: minmax(82px, 110px) 1fr;
+    gap: 0.5rem 0.75rem;
   }
 
   .cv-vertical-item:before {
     left: -0.2rem;
-  }
-
-  .cv-year {
-    margin-bottom: 0.15rem;
   }
 }
 
