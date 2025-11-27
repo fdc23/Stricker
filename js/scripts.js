@@ -8,16 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const cvOverlay = document.getElementById('cvOverlay');
   const cvOpeners = document.querySelectorAll('[data-cv-trigger]');
   const cvCloseBtn = cvOverlay ? cvOverlay.querySelector('[data-cv-close]') : null;
-  const cvFrames = document.querySelectorAll('.cv-pdf-frame');
-  const cvPdfParams = '#toolbar=0&navpanes=0&scrollbar=0&statusbar=0&messages=0&view=FitH&zoom=page-fit&pagemode=none&disableprint=true&download=0';
-  const cvPdfDataUrl =
-    'data:application/pdf;base64,JVBERi0xLjQKMSAwIG9iago8PCAvVHlwZSAvQ2F0YWxvZyAvUGFnZXMgMiAwIFIgPj4KZW5kb2JqCjIgMCBvYmoKPDwgL1R5cGUgL1BhZ2VzIC9Db3VudCAxIC9LaWRzIFszIDAgUl0gPj4KZW5kb2JqCjMgMCBvYmoKPDwgL1R5cGUgL1BhZ2UgL1BhcmVudCAyIDAgUiAvTWVkaWFCb3ggWzAgMCA2MTIgNzkyXSAvQ29udGVudHMgNCAwIFIgL1Jlc291cmNlcyA8PCAvRm9udCA8PCAvRjEgNSAwIFIgPj4gPj4gPj4KZW5kb2JqCjQgMCBvYmoKPDwgL0xlbmd0aCA5NSA+PgpzdHJlYW0KQlQgL0YxIDI0IFRmIDcyIDcyMCBUZCAoQ3VycmljdWx1bSBWaXRhZSAtIERyLiBMdWNpYW5vIFN0cmlja2VyKSBUaiBFVApCVCAvRjEgMTIgVGYgNzIgNjkwIFRkIChSZXN1bWVuIHByb2Zlc2lvbmFsIHBhcmEgcmVmZXJlbmNpYSBkaWdpdGFsKSBUaiBFVAplbmRzdHJlYW0KZW5kb2JqCjUgMCBvYmoKPDwgL1R5cGUgL0ZvbnQgL1N1YnR5cGUgL1R5cGUxIC9CYXNlRm9udCAvSGVsdmV0aWNhID4+CmVuZG9iagp4cmVmCjAgNgowMDAwMDAwMDAwIDY1NTM1IGYgCjAwMDAwMDAwMTAgMDAwMDAgbiAKMDAwMDAwMDA2MSAwMDAwMCBuCjAwMDAwMDAxMjQgMDAwMDAgbgowMDAwMDAwMjg3IDAwMDAwIG4KMDAwMDAwMDQ0NSAwMDAwMCBuCnRyYWlsZXIKPDwgL1Jvb3QgMSAwIFIgL1NpemUgNiA+PgpzdGFydHhyZWYKNTMxCiUlRU9GCg==' +
-    cvPdfParams;
   let lastCvTrigger = null;
-
-  const instagramEmbeds = document.querySelectorAll('.instagram-media');
-  let instagramScriptLoading = null;
-  let instagramScriptLoaded = false;
 
   const waOverlay = document.getElementById('waOverlay');
   const waFab = document.getElementById('waFab');
@@ -26,65 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const waDiscipline = waOverlay ? waOverlay.querySelector('[name="wa-discipline"]') : null;
   const waIntent = waOverlay ? waOverlay.querySelector('[name="wa-intent"]') : null;
   const waType = waOverlay ? waOverlay.querySelector('[name="wa-type"]') : null;
-
-  if (cvFrames.length) {
-    cvFrames.forEach((frame) => {
-      frame.setAttribute('data', cvPdfDataUrl);
-      frame.setAttribute('title', 'Currículum Vitae de Dr. Luciano Stricker');
-    });
-  }
-
-  const ensureInstagramScript = () => {
-    if (instagramScriptLoaded) return Promise.resolve();
-    if (instagramScriptLoading) return instagramScriptLoading;
-    instagramScriptLoading = new Promise((resolve, reject) => {
-      const script = document.createElement('script');
-      script.src = 'https://www.instagram.com/embed.js';
-      script.async = true;
-      script.defer = true;
-      script.onload = () => {
-        instagramScriptLoaded = true;
-        resolve();
-      };
-      script.onerror = reject;
-      document.body.appendChild(script);
-    });
-    return instagramScriptLoading;
-  };
-
-  const processInstagramEmbeds = () => {
-    if (window.instgrm && window.instgrm.Embeds && typeof window.instgrm.Embeds.process === 'function') {
-      window.instgrm.Embeds.process();
-    }
-  };
-
-  const lazyLoadInstagram = () => {
-    if (!instagramEmbeds.length) return;
-
-    const loadAndProcess = () => {
-      ensureInstagramScript()
-        .then(processInstagramEmbeds)
-        .catch(() => {});
-    };
-
-    if ('IntersectionObserver' in window) {
-      const observer = new IntersectionObserver(
-        (entries, obs) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              loadAndProcess();
-              obs.disconnect();
-            }
-          });
-        },
-        { rootMargin: '200px 0px' }
-      );
-
-      instagramEmbeds.forEach((embed) => observer.observe(embed));
-    } else {
-      loadAndProcess();
-    }
-  };
 
   function closeWaOverlay(event) {
     if (event) event.preventDefault();
@@ -173,8 +105,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
-
-  lazyLoadInstagram();
 
   document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape') {

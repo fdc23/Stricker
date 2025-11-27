@@ -111,12 +111,10 @@ body::before {
   position: fixed;
   inset: 0;
   pointer-events: none;
-  background-color: #fff;
-  background-image: radial-gradient(circle, rgba(232, 190, 214, 0.28) 1.2px, transparent 0), radial-gradient(circle, rgba(239, 205, 223, 0.22) 1.4px, transparent 0), radial-gradient(circle, rgba(245, 214, 231, 0.2) 1px, transparent 0);
-  background-size: 120px 120px, 140px 140px, 180px 180px;
-  background-position: 0 0, 60px 70px, 90px 30px;
-  opacity: 0.64;
-  animation: floatFuchsiaDots 42s ease-in-out infinite alternate;
+  background: radial-gradient(circle at 14% 18%, rgba(249, 236, 244, 0.7) 0 12px, transparent 20px), radial-gradient(circle at 78% 22%, rgba(248, 232, 242, 0.6) 0 10px, transparent 18px), radial-gradient(circle at 46% 78%, rgba(252, 240, 248, 0.55) 0 12px, transparent 22px), radial-gradient(circle at 22% 72%, rgba(255, 241, 248, 0.48) 0 10px, transparent 20px), radial-gradient(circle at 68% 64%, rgba(247, 228, 240, 0.6) 0 12px, transparent 22px);
+  background-size: 145% 145%;
+  opacity: 0.42;
+  animation: softFuchsiaFloat 36s ease-in-out infinite alternate;
   z-index: 0;
 }
 
@@ -126,15 +124,15 @@ body::before {
   }
 }
 
-@keyframes floatFuchsiaDots {
+@keyframes softFuchsiaFloat {
   0% {
-    background-position: 0 0, 60px 70px, 90px 30px;
+    background-position: 0% 0%, 35% 6%, 68% 22%, 18% 40%, 70% 64%;
   }
   50% {
-    background-position: 20px 20px, 80px 90px, 120px 60px;
+    background-position: 6% 10%, 38% 16%, 72% 30%, 22% 46%, 76% 70%;
   }
   100% {
-    background-position: 0 30px, 60px 110px, 90px 80px;
+    background-position: 0% 20%, 30% 26%, 68% 38%, 14% 52%, 70% 78%;
   }
 }
 
@@ -8233,20 +8231,6 @@ textarea.form-control-lg {
     filter: blur(0.2px); /* opcional: suaviza un poco */
 }
 
-@media (max-width: 575.98px) {
-    .bg-animation-icon {
-        opacity: 0.05;
-        animation-duration: 48s;
-    }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .bg-animation-icon {
-        animation: none !important;
-        opacity: 0.05;
-    }
-}
-
     /* Diferentes posiciones, tamaños y velocidades (efecto parallax simple) */
     .bg-animation-icon.i1 {
         top: 10%;
@@ -11187,11 +11171,11 @@ html {
   position: relative;
   width: min(520px, calc(100% - 1rem));
   background: linear-gradient(145deg, #fff9fd, #fff4fa);
-  border-radius: 0.35rem;
+  border-radius: 1rem;
   padding: 1.25rem clamp(1.1rem, 2vw, 1.45rem) 1.1rem;
   box-shadow: 0 24px 55px rgba(0, 0, 0, 0.22), 0 12px 28px rgba(232, 92, 164, 0.18);
   border: 1px solid rgba(214, 51, 132, 0.18);
-  overflow: visible;
+  overflow: hidden;
 }
 
 .wa-close-btn {
@@ -11333,7 +11317,6 @@ html {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.2s ease;
-  overflow: hidden;
 }
 
 .cv-overlay.show {
@@ -11345,7 +11328,6 @@ html {
   position: relative;
   width: min(1100px, calc(100% - 1rem));
   height: min(90vh, 920px);
-  max-height: calc(100vh - 1.25rem);
   background: linear-gradient(135deg, #ffffff, #fff8fb);
   border-radius: 0.9rem;
   box-shadow: 0 22px 55px rgba(0, 0, 0, 0.28), 0 12px 25px rgba(214, 51, 132, 0.18);
@@ -11369,7 +11351,6 @@ html {
   padding: 0.5rem 0.7rem 0.7rem;
   background: #ffffff;
   position: relative;
-  overflow: hidden;
 }
 
 .cv-frame-shell {
@@ -11380,7 +11361,6 @@ html {
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.72), 0 20px 40px rgba(0, 0, 0, 0.12);
   overflow: hidden;
   background: linear-gradient(135deg, #fffdfd, #fff4f9);
-  overscroll-behavior: contain;
 }
 
 .cv-frame-shell::after {
@@ -11399,7 +11379,6 @@ html {
   border-radius: 0.65rem;
   background: #ffffff;
   box-shadow: 0 16px 38px rgba(0, 0, 0, 0.14);
-  display: block;
 }
 
 .cv-close-btn {
@@ -11431,23 +11410,20 @@ html {
 
 body.cv-open {
   overflow: hidden;
-  overscroll-behavior: none;
 }
 
 @media (max-width: 575.98px) {
   .cv-dialog {
     width: calc(100% - 0.5rem);
     height: 88vh;
-    max-height: 88vh;
     border-radius: 0.85rem;
   }
 
   .cv-dialog-header {
-    inset-inline-end: 0.25rem;
-    inset-block-start: 0.25rem;
+    inset-inline-end: -0.35rem;
   }
 
   .cv-dialog-body {
-    padding: 0.45rem 0.5rem 0.6rem;
+    padding: 0.4rem 0.45rem 0.55rem;
   }
 }
