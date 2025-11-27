@@ -103,6 +103,37 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at 14% 18%, rgba(249, 236, 244, 0.7) 0 12px, transparent 20px), radial-gradient(circle at 78% 22%, rgba(248, 232, 242, 0.6) 0 10px, transparent 18px), radial-gradient(circle at 46% 78%, rgba(252, 240, 248, 0.55) 0 12px, transparent 22px), radial-gradient(circle at 22% 72%, rgba(255, 241, 248, 0.48) 0 10px, transparent 20px), radial-gradient(circle at 68% 64%, rgba(247, 228, 240, 0.6) 0 12px, transparent 22px);
+  background-size: 145% 145%;
+  opacity: 0.42;
+  animation: softFuchsiaFloat 36s ease-in-out infinite alternate;
+  z-index: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body::before {
+    animation: none;
+  }
+}
+
+@keyframes softFuchsiaFloat {
+  0% {
+    background-position: 0% 0%, 35% 6%, 68% 22%, 18% 40%, 70% 64%;
+  }
+  50% {
+    background-position: 6% 10%, 38% 16%, 72% 30%, 22% 46%, 76% 70%;
+  }
+  100% {
+    background-position: 0% 20%, 30% 26%, 68% 38%, 14% 52%, 70% 78%;
+  }
 }
 
 hr {
