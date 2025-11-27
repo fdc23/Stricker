@@ -10993,3 +10993,89 @@ html {
         height: 64px; /* como tus imágenes son 1:1, esto funciona perfecto */
         object-fit: cover; /* por si alguna no es exactamente cuadrada */
     }
+
+/* FAQ nav dropdown refresh */
+.nav-faq-dropdown .nav-faq-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.06);
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.navbar-dark .nav-faq-dropdown .nav-faq-toggle:hover,
+.navbar-dark .nav-faq-dropdown .nav-faq-toggle:focus,
+.navbar-dark .nav-faq-dropdown .nav-faq-toggle.show {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.32);
+  color: #fff;
+  box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.2), 0 0 0 0.2rem rgba(232, 92, 164, 0.25);
+}
+
+.nav-faq-toggle::after {
+  font-size: 0.8rem;
+  vertical-align: middle;
+}
+
+.nav-faq-menu {
+  --bs-dropdown-min-width: 15rem;
+  --bs-dropdown-bg: #ffffff;
+  --bs-dropdown-link-active-bg: #f7dcec;
+  --bs-dropdown-link-hover-bg: rgba(232, 92, 164, 0.12);
+  --bs-dropdown-link-hover-color: #c51f76;
+  padding: 0.75rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(214, 51, 132, 0.18);
+  background: linear-gradient(135deg, #ffffff 0%, #fff8fc 100%);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.2), 0 12px 30px rgba(214, 51, 132, 0.12);
+}
+
+.nav-faq-menu .dropdown-header {
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  padding: 0.25rem 0.9rem 0.75rem;
+}
+
+.nav-faq-menu .nav-faq-link {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.65rem 0.9rem;
+  border-radius: 0.65rem;
+  font-weight: 600;
+  color: #3c2533;
+  transition: background-color 0.18s ease, color 0.18s ease, transform 0.18s ease;
+}
+
+.nav-faq-menu .nav-faq-link:hover,
+.nav-faq-menu .nav-faq-link:focus {
+  color: #b11d6a;
+  background-color: rgba(232, 92, 164, 0.12);
+  transform: translateX(2px);
+}
+
+.nav-faq-menu .nav-faq-link:active,
+.nav-faq-menu .nav-faq-link.active {
+  color: #fff;
+  background-color: rgba(214, 51, 132, 0.9);
+}
+
+@media (max-width: 991.98px) {
+  .nav-faq-dropdown .nav-faq-toggle {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 0.35rem;
+  }
+
+  .nav-faq-dropdown .nav-faq-menu {
+    width: calc(100% - 2rem);
+    margin: 0 1rem;
+    border-radius: 0.9rem;
+  }
+}
