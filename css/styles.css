@@ -10993,3 +10993,128 @@ html {
         height: 64px; /* como tus imágenes son 1:1, esto funciona perfecto */
         object-fit: cover; /* por si alguna no es exactamente cuadrada */
     }
+
+/* === Estilos para el currículum === */
+.cv-wrapper {
+  background: #ffffff;
+  border: 1px solid #e9ecef;
+  border-radius: 1.25rem;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.05);
+}
+
+.cv-profile {
+  border-bottom: 1px solid #e9ecef;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.cv-avatar-soft img {
+  width: 160px;
+  height: auto;
+  display: block;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.cv-section + .cv-section {
+  border-top: 1px solid #e9ecef;
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.cv-section h2 {
+  font-weight: 800;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.cv-list {
+  padding-left: 1.25rem;
+  margin-bottom: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.cv-card {
+  border: 1px solid #e9ecef;
+  border-radius: 0.9rem;
+  padding: 1rem 1.1rem;
+  background: #fbfbfb;
+}
+
+.cv-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .cv-grid.two-cols {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.cv-timeline {
+  position: relative;
+  display: grid;
+  gap: 1.1rem;
+  padding-left: 1.5rem;
+}
+
+.cv-timeline:before {
+  content: "";
+  position: absolute;
+  top: 0.35rem;
+  left: 0.25rem;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.05));
+}
+
+.cv-timeline-item {
+  position: relative;
+  padding-left: 1rem;
+}
+
+.cv-timeline-item:before {
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  left: -1.2rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background: #111;
+  box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.08);
+}
+
+.cv-timeline-date {
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 0.35rem;
+}
+
+.cv-timeline-content h3 {
+  font-weight: 700;
+}
+
+.cv-timeline-content p {
+  margin-bottom: 0;
+  color: #4b5563;
+}
+
+/* Hovers sin acento azul */
+.btn-primary,
+.btn-outline-primary {
+  background-color: #111;
+  border-color: #111;
+  color: #fff;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  background-color: #fff;
+  color: #111;
+  border-color: #111;
+  box-shadow: none;
+}
