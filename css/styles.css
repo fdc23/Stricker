@@ -11000,14 +11000,16 @@ html {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
-  padding: 0.45rem 0.9rem;
-  border-radius: 999px;
+  padding: 0.48rem 0.95rem;
+  border-radius: 0.85rem;
   border: 1px solid rgba(255, 255, 255, 0.18);
   background: rgba(255, 255, 255, 0.06);
   color: #fff;
   font-weight: 600;
   letter-spacing: 0.01em;
-  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+  margin-right: 0.4rem;
+}
 .navbar-dark .nav-home-pill:hover,
 .navbar-dark .nav-home-pill:focus,
 .navbar-dark .nav-home-pill:active,
@@ -11073,6 +11075,7 @@ html {
     width: 100%;
     justify-content: center;
     margin-top: 0.35rem;
+    margin-right: 0;
   }
 
   .nav-faq-dropdown .nav-faq-toggle {
