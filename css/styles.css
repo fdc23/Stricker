@@ -10994,8 +10994,9 @@ html {
         object-fit: cover; /* por si alguna no es exactamente cuadrada */
     }
 
-/* FAQ nav dropdown refresh */
-.nav-faq-dropdown .nav-faq-toggle {
+/* Navbar pill links */
+.nav-home-pill,
+.nav-faq-toggle {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
@@ -11007,8 +11008,9 @@ html {
   font-weight: 600;
   letter-spacing: 0.01em;
   transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
-}
-
+.navbar-dark .nav-home-pill:hover,
+.navbar-dark .nav-home-pill:focus,
+.navbar-dark .nav-home-pill:active,
 .navbar-dark .nav-faq-dropdown .nav-faq-toggle:hover,
 .navbar-dark .nav-faq-dropdown .nav-faq-toggle:focus,
 .navbar-dark .nav-faq-dropdown .nav-faq-toggle.show {
@@ -11067,6 +11069,12 @@ html {
 }
 
 @media (max-width: 991.98px) {
+  .nav-home-pill {
+    width: 100%;
+    justify-content: center;
+    margin-top: 0.35rem;
+  }
+
   .nav-faq-dropdown .nav-faq-toggle {
     width: 100%;
     justify-content: space-between;
