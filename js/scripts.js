@@ -8,6 +8,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const cvOverlay = document.getElementById('cvOverlay');
   const cvOpeners = document.querySelectorAll('[data-cv-trigger]');
   const cvCloseBtn = cvOverlay ? cvOverlay.querySelector('[data-cv-close]') : null;
+  const cvFrames = document.querySelectorAll('.cv-pdf-frame');
+  const cvPdfParams = '#toolbar=0&navpanes=0&scrollbar=0&statusbar=0&messages=0&view=FitH&zoom=page-fit&pagemode=none&disableprint=true&download=0';
+  const cvPdfDataUrl =
+    'data:application/pdf;base64,JVBERi0xLjQKMSAwIG9iago8PCAvVHlwZSAvQ2F0YWxvZyAvUGFnZXMgMiAwIFIgPj4KZW5kb2JqCjIgMCBvYmoKPDwgL1R5cGUgL1BhZ2VzIC9Db3VudCAxIC9LaWRzIFszIDAgUl0gPj4KZW5kb2JqCjMgMCBvYmoKPDwgL1R5cGUgL1BhZ2UgL1BhcmVudCAyIDAgUiAvTWVkaWFCb3ggWzAgMCA2MTIgNzkyXSAvQ29udGVudHMgNCAwIFIgL1Jlc291cmNlcyA8PCAvRm9udCA8PCAvRjEgNSAwIFIgPj4gPj4gPj4KZW5kb2JqCjQgMCBvYmoKPDwgL0xlbmd0aCA5NSA+PgpzdHJlYW0KQlQgL0YxIDI0IFRmIDcyIDcyMCBUZCAoQ3VycmljdWx1bSBWaXRhZSAtIERyLiBMdWNpYW5vIFN0cmlja2VyKSBUaiBFVApCVCAvRjEgMTIgVGYgNzIgNjkwIFRkIChSZXN1bWVuIHByb2Zlc2lvbmFsIHBhcmEgcmVmZXJlbmNpYSBkaWdpdGFsKSBUaiBFVAplbmRzdHJlYW0KZW5kb2JqCjUgMCBvYmoKPDwgL1R5cGUgL0ZvbnQgL1N1YnR5cGUgL1R5cGUxIC9CYXNlRm9udCAvSGVsdmV0aWNhID4+CmVuZG9iagp4cmVmCjAgNgowMDAwMDAwMDAwIDY1NTM1IGYgCjAwMDAwMDAwMTAgMDAwMDAgbiAKMDAwMDAwMDA2MSAwMDAwMCBuCjAwMDAwMDAxMjQgMDAwMDAgbgowMDAwMDAwMjg3IDAwMDAwIG4KMDAwMDAwMDQ0NSAwMDAwMCBuCnRyYWlsZXIKPDwgL1Jvb3QgMSAwIFIgL1NpemUgNiA+PgpzdGFydHhyZWYKNTMxCiUlRU9GCg==' +
+    cvPdfParams;
   let lastCvTrigger = null;
 
   const waOverlay = document.getElementById('waOverlay');
@@ -17,6 +22,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const waDiscipline = waOverlay ? waOverlay.querySelector('[name="wa-discipline"]') : null;
   const waIntent = waOverlay ? waOverlay.querySelector('[name="wa-intent"]') : null;
   const waType = waOverlay ? waOverlay.querySelector('[name="wa-type"]') : null;
+
+  if (cvFrames.length) {
+    cvFrames.forEach((frame) => {
+      frame.setAttribute('data', cvPdfDataUrl);
+      frame.setAttribute('title', 'Currículum Vitae de Dr. Luciano Stricker');
+    });
+  }
 
   function closeWaOverlay(event) {
     if (event) event.preventDefault();
