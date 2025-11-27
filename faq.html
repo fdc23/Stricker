@@ -588,6 +588,56 @@
                 </div>
             </div>
         </footer>
+        <button class="wa-fab" id="waFab" type="button" aria-haspopup="dialog" aria-controls="waOverlay" aria-expanded="false">
+            <i class="bi bi-whatsapp"></i>
+            <span class="visually-hidden">Abrir asistente de WhatsApp</span>
+        </button>
+        <div class="wa-overlay" id="waOverlay" role="dialog" aria-modal="true" aria-hidden="true" tabindex="-1">
+            <div class="wa-dialog" aria-label="Asistente de WhatsApp para coordinación médica">
+                <button class="wa-close-btn" type="button" data-wa-close aria-label="Cerrar asistente">
+                    <i class="bi bi-x-lg"></i>
+                    <span>Cerrar</span>
+                </button>
+                <h3>Coordina por WhatsApp</h3>
+                <p class="small mb-3">Elige la especialidad y el tipo de gestión para preparar tu mensaje automático.</p>
+                <form class="wa-form" data-wa-form>
+                    <div class="mb-3">
+                        <label class="form-label" for="waDiscipline">Especialidad</label>
+                        <select class="form-select" id="waDiscipline" name="wa-discipline" required>
+                            <option value="Cirugía de rostro">Cirugía de rostro</option>
+                            <option value="Cirugía estética corporal">Cirugía estética corporal</option>
+                            <option value="Abdomen y contorno">Abdomen y contorno</option>
+                            <option value="Brazos y piernas">Brazos y piernas</option>
+                            <option value="Glúteos">Glúteos</option>
+                            <option value="Cirugía genital">Cirugía genital</option>
+                            <option value="Cirugía de mamas">Cirugía de mamas</option>
+                            <option value="Dermoestética">Dermoestética</option>
+                            <option value="Cirugía reconstructiva">Cirugía reconstructiva</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="waIntent">Tipo de gestión</label>
+                        <select class="form-select" id="waIntent" name="wa-intent" required>
+                            <option value="consultar">Consultar</option>
+                            <option value="agendar">Agendar</option>
+                        </select>
+                    </div>
+                    <div class="mb-4">
+                        <label class="form-label" for="waType">Motivo</label>
+                        <select class="form-select" id="waType" name="wa-type" required>
+                            <option value="duda">Duda</option>
+                            <option value="visita">Visita</option>
+                        </select>
+                    </div>
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <span class="wa-badge"><i class="bi bi-whatsapp"></i>Mensaje rápido</span>
+                        <small class="text-muted">Se abrirá WhatsApp con tu mensaje listo.</small>
+                    </div>
+                    <button class="wa-send-btn" type="submit">Enviar a WhatsApp</button>
+                    <p class="wa-note mt-3 mb-0">Hola Bastián, me comunico contigo para (consultar/agendar) una (duda/visita) para (especialidad FAQ) con el Dr. Luciano Stricker.</p>
+                </form>
+            </div>
+        </div>
         <div class="cv-overlay" id="cvOverlay" role="dialog" aria-modal="true" aria-hidden="true" tabindex="-1">
             <div class="cv-dialog" aria-label="Currículo de Dr. Luciano Stricker">
                 <div class="cv-dialog-header">
