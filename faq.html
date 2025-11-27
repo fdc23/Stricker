@@ -597,9 +597,11 @@
                     </button>
                 </div>
                 <div class="cv-dialog-body">
-                    <object class="cv-pdf-frame" data="assets/docs/curriculum.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH" type="application/pdf" aria-label="Currículum Vitae de Dr. Luciano Stricker">
-                        <p>Tu navegador no puede mostrar el PDF. <a href="assets/docs/curriculum.pdf" target="_blank" rel="noopener">Descárgalo aquí.</a></p>
-                    </object>
+                    <div class="cv-frame-shell" oncontextmenu="return false">
+                        <object class="cv-pdf-frame" data="assets/docs/curriculum.pdf#toolbar=0&navpanes=0&scrollbar=0&statusbar=0&messages=0&view=FitH&zoom=page-fit&pagemode=none&disableprint=true&download=0" type="application/pdf" aria-label="Currículum Vitae de Dr. Luciano Stricker" tabindex="0">
+                            <p>Tu navegador no puede mostrar el PDF en esta vista protegida.</p>
+                        </object>
+                    </div>
                 </div>
             </div>
         </div>
