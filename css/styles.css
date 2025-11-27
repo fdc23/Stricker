@@ -10973,3 +10973,69 @@ html {
     width: 100% !important;
     box-sizing: border-box;
 }
+
+/* Custom FAQ refinements */
+.text-pinky {
+  color: rgb(var(--bs-pinky-rgb));
+}
+
+.faq-sticky {
+  top: 6rem;
+}
+
+.bg-soft-primary {
+  background-color: rgba(var(--bs-primary-rgb), 0.08) !important;
+}
+
+.clinical-nav {
+  border: 1px solid #e3e8ef;
+  border-radius: 1rem;
+}
+
+.clinical-nav .branch-label {
+  font-weight: 600;
+  color: #1f2933;
+}
+
+.clinical-nav .branch-subtext {
+  color: #6c757d;
+  font-size: 0.92rem;
+  margin-top: 0.15rem;
+}
+
+.clinical-nav .btn-outline-primary {
+  border-color: #d8e6f5;
+}
+
+.clinical-nav .badge {
+  font-weight: 600;
+}
+
+.faq-accordion .accordion-item {
+  border: 1px solid #e7ecf3;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 8px 28px rgba(15, 23, 42, 0.06);
+  margin-bottom: 0.75rem;
+}
+
+.faq-accordion .accordion-button {
+  background: #fdfefe;
+  font-weight: 600;
+  color: #1f2933;
+}
+
+.faq-accordion .accordion-button:not(.collapsed) {
+  color: #0f62a9;
+  background-color: #f1f6fb;
+  box-shadow: none;
+}
+
+.faq-accordion .accordion-body {
+  background-color: #fff;
+  line-height: 1.7;
+}
+
+.faq-accordion .accordion-item:last-of-type {
+  margin-bottom: 0;
+}

@@ -16,7 +16,7 @@
     <body class="d-flex flex-column h-100">
         <main class="flex-shrink-0">
             <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-pinky">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
                 <div class="container px-5">
                     <a class="navbar-brand d-flex align-items-center" href="index.html">
                         <img src="https://cdn.didas.cl/luciano_stricker/head.webp?raw=true"
@@ -34,237 +34,460 @@
                 </div>
             </nav>
 
-            <section class="py-5">
+            <section class="py-5 bg-light border-bottom">
                 <div class="container px-5 my-5">
-                    <div class="row gx-5">
-                        <div class="col-xl-8">
-                            <h2 class="fw-bolder mb-1">Preguntas frecuentes</h2>
-                            <p class="text-muted mb-4">Organizamos las dudas por las áreas de trabajo reales del Dr. Luciano Stricker, según los procedimientos vigentes en su práctica.</p>
-
-                            <div class="badge bg-primary rounded-pill mb-3">Cirugía facial</div>
-                            <div class="accordion mb-4" id="facialAccordion">
-                                <div class="accordion-item">
-                                    <h3 class="accordion-header" id="headingBlefaroplastia">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBlefaroplastia" aria-expanded="false" aria-controls="collapseBlefaroplastia">¿Qué corrige la blefaroplastia?</button>
-                                    </h3>
-                                    <div class="accordion-collapse collapse" id="collapseBlefaroplastia" aria-labelledby="headingBlefaroplastia" data-bs-parent="#facialAccordion">
-                                        <div class="accordion-body">
-                                            Elimina exceso de piel y bolsas de grasa en párpados superiores e inferiores para recuperar una mirada descansada. Es un procedimiento ambulatorio, con anestesia local y sedación, y deja cicatrices muy discretas en los pliegues naturales.
+                    <div class="row gx-5 gy-4">
+                        <div class="col-lg-4 order-lg-2">
+                            <div class="card shadow-sm border-0 sticky-top faq-sticky clinical-nav h-100">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <span class="badge bg-soft-primary text-primary rounded-pill me-2">Índice</span>
+                                        <h6 class="mb-0 text-secondary text-uppercase fw-semibold small">Explora por categoría</h6>
+                                    </div>
+                                    <div class="clinical-branches">
+                                        <div class="clinical-branch mb-3 pb-3 border-bottom">
+                                            <div class="d-flex justify-content-between align-items-start">
+                                                <div>
+                                                    <div class="branch-label">Cirugía facial</div>
+                                                    <div class="branch-subtext">Bichectomía · blefaroplastias · lifting facial/cervical · rinoplastia</div>
+                                                </div>
+                                                <a class="btn btn-sm btn-outline-primary" href="#facial">Ver</a>
+                                            </div>
+                                        </div>
+                                        <div class="clinical-branch mb-3 pb-3 border-bottom">
+                                            <div class="d-flex justify-content-between align-items-start">
+                                                <div>
+                                                    <div class="branch-label">Cirugía estética corporal</div>
+                                                    <div class="branch-subtext">Abdominoplastia · liposucción/lipoescultura · implantes y lifting</div>
+                                                </div>
+                                                <a class="btn btn-sm btn-outline-primary" href="#corporal">Ver</a>
+                                            </div>
+                                        </div>
+                                        <div class="clinical-branch mb-3 pb-3 border-bottom">
+                                            <div class="d-flex justify-content-between align-items-start">
+                                                <div>
+                                                    <div class="branch-label">Cirugía genital</div>
+                                                    <div class="branch-subtext">Subcategorías femenina y masculina con técnicas reconstructivas</div>
+                                                </div>
+                                                <a class="btn btn-sm btn-outline-primary" href="#genital">Ver</a>
+                                            </div>
+                                            <div class="mt-2 d-flex flex-wrap gap-2">
+                                                <a class="badge bg-soft-primary text-primary" href="#genital-femenina">Femenina</a>
+                                                <a class="badge bg-soft-primary text-primary" href="#genital-masculina">Masculina</a>
+                                            </div>
+                                        </div>
+                                        <div class="clinical-branch mb-3 pb-3 border-bottom">
+                                            <div class="d-flex justify-content-between align-items-start">
+                                                <div>
+                                                    <div class="branch-label">Cirugía de mamas</div>
+                                                    <div class="branch-subtext">Aumento, reducción, mastopexia y ginecomastia</div>
+                                                </div>
+                                                <a class="btn btn-sm btn-outline-primary" href="#mamas">Ver</a>
+                                            </div>
+                                        </div>
+                                        <div class="clinical-branch">
+                                            <div class="d-flex justify-content-between align-items-start">
+                                                <div>
+                                                    <div class="branch-label">Dermoestética</div>
+                                                    <div class="branch-subtext">Botox, perfilado, ácido hialurónico y rinomodelación</div>
+                                                </div>
+                                                <a class="btn btn-sm btn-outline-primary" href="#dermo">Ver</a>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h3 class="accordion-header" id="headingPexia">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePexia" aria-expanded="false" aria-controls="collapsePexia">¿En qué consiste la pexia de cejas?</button>
-                                    </h3>
-                                    <div class="accordion-collapse collapse" id="collapsePexia" aria-labelledby="headingPexia" data-bs-parent="#facialAccordion">
-                                        <div class="accordion-body">
-                                            Reposiciona las cejas y la frente cuando existen signos de caída. Se emplean incisiones pequeñas ocultas en el cuero cabelludo para levantar los tejidos y abrir la mirada sin cambiar la expresión natural.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h3 class="accordion-header" id="headingLifting">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLifting" aria-expanded="false" aria-controls="collapseLifting">¿Cómo es un lifting cervicofacial?</button>
-                                    </h3>
-                                    <div class="accordion-collapse collapse" id="collapseLifting" aria-labelledby="headingLifting" data-bs-parent="#facialAccordion">
-                                        <div class="accordion-body">
-                                            Combina tensado de la piel y del sistema músculo-aponeurótico (SMAS) para tratar flacidez en mejillas, línea mandibular y cuello. Busca un resultado armónico, evitando el aspecto “tirante” mediante reposicionamiento profundo y natural.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h3 class="accordion-header" id="headingRinoplastia">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRinoplastia" aria-expanded="false" aria-controls="collapseRinoplastia">¿Qué objetivos tiene la rinoplastia funcional-estética?</button>
-                                    </h3>
-                                    <div class="accordion-collapse collapse" id="collapseRinoplastia" aria-labelledby="headingRinoplastia" data-bs-parent="#facialAccordion">
-                                        <div class="accordion-body">
-                                            Mejora la forma nasal y, cuando es necesario, corrige desviaciones del tabique o problemas de cornetes para optimizar la respiración. Se planifica a medida del rostro, cuidando la proporción con mentón, labios y frente.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h3 class="accordion-header" id="headingOtoplastia">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOtoplastia" aria-expanded="false" aria-controls="collapseOtoplastia">¿Cuándo se indica una otoplastia?</button>
-                                    </h3>
-                                    <div class="accordion-collapse collapse" id="collapseOtoplastia" aria-labelledby="headingOtoplastia" data-bs-parent="#facialAccordion">
-                                        <div class="accordion-body">
-                                            Está indicada en orejas prominentes o con pliegues poco definidos. A través de incisiones detrás de la oreja se remodela el cartílago, logrando una proyección más pegada y simétrica sin alterar el conducto auditivo.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h3 class="accordion-header" id="headingMentoplastia">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMentoplastia" aria-expanded="false" aria-controls="collapseMentoplastia">¿Qué aporta una mentoplastia?</button>
-                                    </h3>
-                                    <div class="accordion-collapse collapse" id="collapseMentoplastia" aria-labelledby="headingMentoplastia" data-bs-parent="#facialAccordion">
-                                        <div class="accordion-body">
-                                            Permite proyectar o reducir el mentón para equilibrar el perfil facial. Se puede realizar con implantes específicos o mediante avance óseo, según la anatomía y la proporción buscada con nariz, labios y cuello.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="badge bg-primary rounded-pill mb-3">Cirugía estética corporal</div>
-                            <div class="accordion mb-4" id="corporalAccordion">
-                                <div class="accordion-item">
-                                    <h3 class="accordion-header" id="headingAbdominoplastia">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAbdominoplastia" aria-expanded="false" aria-controls="collapseAbdominoplastia">¿Para quién es la abdominoplastia?</button>
-                                    </h3>
-                                    <div class="accordion-collapse collapse" id="collapseAbdominoplastia" aria-labelledby="headingAbdominoplastia" data-bs-parent="#corporalAccordion">
-                                        <div class="accordion-body">
-                                            Indicado en pacientes con flacidez y separación de músculos rectos tras embarazos o variaciones de peso. Retira exceso de piel, refuerza la pared abdominal y reposiciona el ombligo para un contorno más firme.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h3 class="accordion-header" id="headingGluteos">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGluteos" aria-expanded="false" aria-controls="collapseGluteos">¿En qué casos se realiza el levantamiento de glúteos?</button>
-                                    </h3>
-                                    <div class="accordion-collapse collapse" id="collapseGluteos" aria-labelledby="headingGluteos" data-bs-parent="#corporalAccordion">
-                                        <div class="accordion-body">
-                                            Corrige la caída del tejido glúteo, tensando la piel y remodelando el contorno superior de la cadera. Puede complementarse con lipoaspiración localizada para definir la silueta sin usar implantes.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h3 class="accordion-header" id="headingMuslos">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMuslos" aria-expanded="false" aria-controls="collapseMuslos">¿Qué logra un lifting de muslos?</button>
-                                    </h3>
-                                    <div class="accordion-collapse collapse" id="collapseMuslos" aria-labelledby="headingMuslos" data-bs-parent="#corporalAccordion">
-                                        <div class="accordion-body">
-                                            Retira piel excedente en la cara interna de los muslos y reposiciona los tejidos para reducir fricción y flacidez. Las incisiones se planifican en pliegues inguinales para disimular las cicatrices.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="badge bg-primary rounded-pill mb-3">Cirugía genital</div>
-                            <div class="accordion mb-4" id="genitalAccordion">
-                                <div class="accordion-item">
-                                    <h3 class="accordion-header" id="headingLabioplastia">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLabioplastia" aria-expanded="false" aria-controls="collapseLabioplastia">¿Qué es la labioplastia de reducción?</button>
-                                    </h3>
-                                    <div class="accordion-collapse collapse" id="collapseLabioplastia" aria-labelledby="headingLabioplastia" data-bs-parent="#genitalAccordion">
-                                        <div class="accordion-body">
-                                            Reduce y simetriza los labios menores cuando generan molestias, irritación o incomodidad estética. Se retira el exceso de tejido conservando la sensibilidad y el contorno natural de la vulva.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h3 class="accordion-header" id="headingHimenoplastia">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHimenoplastia" aria-expanded="false" aria-controls="collapseHimenoplastia">¿Para qué se indica la himenoplastia?</button>
-                                    </h3>
-                                    <div class="accordion-collapse collapse" id="collapseHimenoplastia" aria-labelledby="headingHimenoplastia" data-bs-parent="#genitalAccordion">
-                                        <div class="accordion-body">
-                                            Restaura de forma simbólica la membrana himeneal cuando ha sufrido desgarros. Se realiza con micro puntos reabsorbibles y enfoque reparador, priorizando la seguridad y la anatomía de cada paciente.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h3 class="accordion-header" id="headingMonte">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMonte" aria-expanded="false" aria-controls="collapseMonte">¿Cómo se trata el exceso en el monte de Venus?</button>
-                                    </h3>
-                                    <div class="accordion-collapse collapse" id="collapseMonte" aria-labelledby="headingMonte" data-bs-parent="#genitalAccordion">
-                                        <div class="accordion-body">
-                                            Se reseca piel y grasa localizada para aplanar el área suprapúbica cuando hay volumen prominente. Puede combinarse con lipoaspiración suave para definir el contorno y mejorar el perfil en ropa ajustada.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h3 class="accordion-header" id="headingTrauma">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTrauma" aria-expanded="false" aria-controls="collapseTrauma">¿Qué implica la reconstrucción por traumas de parto?</button>
-                                    </h3>
-                                    <div class="accordion-collapse collapse" id="collapseTrauma" aria-labelledby="headingTrauma" data-bs-parent="#genitalAccordion">
-                                        <div class="accordion-body">
-                                            Repara desgarros o asimetrías producidas durante el parto, recontorneando labios y periné para mejorar confort, estética y funcionalidad. Se utilizan técnicas de reconstrucción delicada con suturas reabsorbibles.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h3 class="accordion-header" id="headingEscroto">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEscroto" aria-expanded="false" aria-controls="collapseEscroto">¿Cuándo se indica la reducción de escroto con escrotoplastía?</button>
-                                    </h3>
-                                    <div class="accordion-collapse collapse" id="collapseEscroto" aria-labelledby="headingEscroto" data-bs-parent="#genitalAccordion">
-                                        <div class="accordion-body">
-                                            En casos de exceso de piel o peso escrotal que genera molestias al caminar o practicar deporte. La cirugía retira el excedente, refuerza la base y redefine la posición de los testículos para mayor comodidad.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h3 class="accordion-header" id="headingGrosor">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGrosor" aria-expanded="false" aria-controls="collapseGrosor">¿En qué consiste la reducción de grosor peneano?</button>
-                                    </h3>
-                                    <div class="accordion-collapse collapse" id="collapseGrosor" aria-labelledby="headingGrosor" data-bs-parent="#genitalAccordion">
-                                        <div class="accordion-body">
-                                            Se realiza cuando hay engrosamientos irregulares o secuelas de injertos previos. Mediante resección precisa de tejido sobrante se busca un contorno cilíndrico regular y seguro, preservando la función eréctil.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="badge bg-primary rounded-pill mb-3">Cirugía de mamas</div>
-                            <div class="accordion mb-4" id="mamasAccordion">
-                                <div class="accordion-item">
-                                    <h3 class="accordion-header" id="headingGinecomastia">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGinecomastia" aria-expanded="false" aria-controls="collapseGinecomastia">¿Cómo se trata la ginecomastia?</button>
-                                    </h3>
-                                    <div class="accordion-collapse collapse" id="collapseGinecomastia" aria-labelledby="headingGinecomastia" data-bs-parent="#mamasAccordion">
-                                        <div class="accordion-body">
-                                            Se retira tejido glandular y grasa en exceso para aplanar la región pectoral masculina. Puede complementarse con lipoaspiración para definir el contorno y reposicionar el complejo areola-pezón si está descendido.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h3 class="accordion-header" id="headingLevantamiento">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLevantamiento" aria-expanded="false" aria-controls="collapseLevantamiento">¿Qué diferencia hay entre levantamiento y mastopexia?</button>
-                                    </h3>
-                                    <div class="accordion-collapse collapse" id="collapseLevantamiento" aria-labelledby="headingLevantamiento" data-bs-parent="#mamasAccordion">
-                                        <div class="accordion-body">
-                                            Ambas corrigen la ptosis mamaria reposicionando la glándula y el complejo areola-pezón. La mastopexia puede incluir pequeña resección glandular o liposucción lateral para refinar la forma sin recurrir a implantes.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="badge bg-primary rounded-pill mb-3">Dermocosmética</div>
-                            <div class="accordion mb-5" id="dermoAccordion">
-                                <div class="accordion-item">
-                                    <h3 class="accordion-header" id="headingPerfilado">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePerfilado" aria-expanded="false" aria-controls="collapsePerfilado">¿Qué es el perfilado de labios?</button>
-                                    </h3>
-                                    <div class="accordion-collapse collapse" id="collapsePerfilado" aria-labelledby="headingPerfilado" data-bs-parent="#dermoAccordion">
-                                        <div class="accordion-body">
-                                            Es una técnica con ácido hialurónico de baja densidad que realza el borde del labio, define el arco de Cupido y mejora la hidratación sin aumentar el volumen de forma exagerada. Se busca un acabado suave y armónico con el rostro.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h3 class="accordion-header" id="headingRellenos">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRellenos" aria-expanded="false" aria-controls="collapseRellenos">¿Para qué se indican los rellenos faciales con ácido hialurónico?</button>
-                                    </h3>
-                                    <div class="accordion-collapse collapse" id="collapseRellenos" aria-labelledby="headingRellenos" data-bs-parent="#dermoAccordion">
-                                        <div class="accordion-body">
-                                            Sirven para reponer volúmenes perdidos en pómulos, surcos nasogenianos, mentón o mandíbula, y para suavizar arrugas finas. Utilizamos productos reabsorbibles y planificados por zonas para mantener la expresión natural.
-                                        </div>
+                                    <div class="alert alert-light border mt-4 mb-0 d-flex align-items-start small">
+                                        <i class="bi bi-info-circle text-primary me-2"></i>
+                                        <div>Preguntas redactadas con la misma fórmula para que compares procedimientos rápidamente. Cada sección está preparada para pacientes que buscan una visión clínica y directa.</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-4">
-                            <div class="card border-0 bg-light mt-xl-5">
-                                <div class="card-body p-4 py-lg-5">
-                                    <div class="d-flex align-items-center justify-content-center">
-                                        <div class="text-center">
-                                            <div class="h6 fw-bolder">¿Tienes más preguntas?</div>
-                                            <p class="text-muted mb-4">
-                                                Escríbenos a
-                                                <br />
-                                                <a href="mailto:contacto@drlucianostricker.cl">contacto@drlucianostricker.cl</a>
-                                            </p>
-                                            <div class="h6 fw-bolder">Redes</div>
-                                            <a class="fs-5 px-2 link-dark" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><i class="bi-instagram"></i></a>
-                                            <a class="fs-5 px-2 link-dark" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><i class="bi-facebook"></i></a>
+                        <div class="col-lg-8 order-lg-1">
+                            <h1 class="fw-bolder mb-2">Preguntas frecuentes</h1>
+                            <p class="text-muted mb-4">Consulta de manera ordenada los procedimientos que realiza el Dr. Luciano Stricker. Agrupamos las preguntas por área y subcategoría con un lenguaje médico claro, manteniendo la misma estructura para que elijas informadamente.</p>
+
+                            <div id="facial" class="mb-5">
+                                <div class="d-flex align-items-center mb-2">
+                                    <div class="badge bg-primary rounded-pill me-2">Cirugía facial</div>
+                                    <span class="text-muted">Rejuvenecimiento y armonización del rostro</span>
+                                </div>
+                                <div class="accordion faq-accordion" id="facialAccordion">
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="headingBichat">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBichat" aria-expanded="false" aria-controls="collapseBichat">¿En qué consiste la bichectomía (bolas de Bichat)?</button>
+                                        </h3>
+                                        <div class="accordion-collapse collapse" id="collapseBichat" aria-labelledby="headingBichat" data-bs-parent="#facialAccordion">
+                                            <div class="accordion-body">Remueve parte de las almohadillas grasas internas de las mejillas para afinar el tercio medio de la cara y definir el contorno mandibular. Se realiza con pequeñas incisiones intraorales que no dejan cicatriz visible.</div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="headingBlefInf">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBlefInf" aria-expanded="false" aria-controls="collapseBlefInf">¿En qué consiste la blefaroplastia inferior?</button>
+                                        </h3>
+                                        <div class="accordion-collapse collapse" id="collapseBlefInf" aria-labelledby="headingBlefInf" data-bs-parent="#facialAccordion">
+                                            <div class="accordion-body">Trata bolsas grasas y flacidez en el párpado inferior para suavizar ojeras y surcos. Puede combinar abordaje transconjuntival o cutáneo según la laxitud de la piel, buscando una transición suave entre párpado y mejilla.</div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="headingBlefSup">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBlefSup" aria-expanded="false" aria-controls="collapseBlefSup">¿En qué consiste la blefaroplastia superior?</button>
+                                        </h3>
+                                        <div class="accordion-collapse collapse" id="collapseBlefSup" aria-labelledby="headingBlefSup" data-bs-parent="#facialAccordion">
+                                            <div class="accordion-body">Retira exceso de piel y grasa en el párpado superior que genera mirada cansada o pérdida de campo visual. La incisión queda camuflada en el pliegue natural y se realiza con anestesia local y sedación.</div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="headingCervico">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCervico" aria-expanded="false" aria-controls="collapseCervico">¿En qué consiste el lifting cervical o cervicoplastia?</button>
+                                        </h3>
+                                        <div class="accordion-collapse collapse" id="collapseCervico" aria-labelledby="headingCervico" data-bs-parent="#facialAccordion">
+                                            <div class="accordion-body">Tensa el cuello y redefine la línea mandibular al tratar bandas platisma, grasa submentoniana y flacidez cutánea. Las incisiones se esconden alrededor de la oreja y el pliegue submentoniano para un perfil más firme.</div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="headingFacelift">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFacelift" aria-expanded="false" aria-controls="collapseFacelift">¿En qué consiste el lifting facial o facelift?</button>
+                                        </h3>
+                                        <div class="accordion-collapse collapse" id="collapseFacelift" aria-labelledby="headingFacelift" data-bs-parent="#facialAccordion">
+                                            <div class="accordion-body">Reposiciona los tejidos profundos del rostro (SMAS) y elimina piel excedente para recuperar firmeza en mejillas, surcos nasogenianos y contorno mandibular. Busca un resultado natural al elevar estructuras profundas sin tensar la superficie en exceso.</div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="headingLipolifting">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLipolifting" aria-expanded="false" aria-controls="collapseLipolifting">¿En qué consiste la lipoinyección facial o lipolifting?</button>
+                                        </h3>
+                                        <div class="accordion-collapse collapse" id="collapseLipolifting" aria-labelledby="headingLipolifting" data-bs-parent="#facialAccordion">
+                                            <div class="accordion-body">Utiliza grasa autóloga purificada para rellenar y rehidratar zonas con pérdida de volumen como pómulos, surcos y labios. Aporta células madre y factores regenerativos que mejoran la calidad de la piel además del contorno.</div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="headingPapada">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePapada" aria-expanded="false" aria-controls="collapsePapada">¿En qué consiste la liposucción de papada o cuello?</button>
+                                        </h3>
+                                        <div class="accordion-collapse collapse" id="collapsePapada" aria-labelledby="headingPapada" data-bs-parent="#facialAccordion">
+                                            <div class="accordion-body">Aspiración selectiva de grasa submentoniana para afinar el ángulo cervicomentoniano y mejorar el perfil lateral. Puede combinarse con tensado de platysma o lipoinyección en mentón para equilibrar proporciones.</div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="headingLunares">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLunares" aria-expanded="false" aria-controls="collapseLunares">¿En qué consiste la resección de lunares faciales?</button>
+                                        </h3>
+                                        <div class="accordion-collapse collapse" id="collapseLunares" aria-labelledby="headingLunares" data-bs-parent="#facialAccordion">
+                                            <div class="accordion-body">Extirpa nevos o queratosis con técnicas de resección y cierre estético orientado a las líneas de tensión de la piel. Se prioriza el análisis dermatoscópico y el envío a anatomía patológica cuando corresponde.</div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="headingLobulo">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLobulo" aria-expanded="false" aria-controls="collapseLobulo">¿En qué consiste la lobuloplastia?</button>
+                                        </h3>
+                                        <div class="accordion-collapse collapse" id="collapseLobulo" aria-labelledby="headingLobulo" data-bs-parent="#facialAccordion">
+                                            <div class="accordion-body">Repara lóbulos rasgados o dilatados por aros pesados, cerrando y recontorneando el tejido. Tras la cicatrización se puede re-perforar en una posición segura y simétrica.</div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="headingMento">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMento" aria-expanded="false" aria-controls="collapseMento">¿En qué consiste la mentoplastia o implante de mentón?</button>
+                                        </h3>
+                                        <div class="accordion-collapse collapse" id="collapseMento" aria-labelledby="headingMento" data-bs-parent="#facialAccordion">
+                                            <div class="accordion-body">Aumenta o proyecta el mentón mediante implantes o avance óseo para equilibrar el perfil con nariz y labios. La incisión suele ser intraoral o bajo el mentón, dejando cicatrices discretas.</div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="headingOtoplastia">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOtoplastia" aria-expanded="false" aria-controls="collapseOtoplastia">¿En qué consiste la otoplastia?</button>
+                                        </h3>
+                                        <div class="accordion-collapse collapse" id="collapseOtoplastia" aria-labelledby="headingOtoplastia" data-bs-parent="#facialAccordion">
+                                            <div class="accordion-body">Remodela el cartílago auricular para acercar las orejas a la cabeza y definir pliegues naturales. Las incisiones se ocultan detrás de la oreja y permiten resultados simétricos sin afectar la audición.</div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="headingPexia">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePexia" aria-expanded="false" aria-controls="collapsePexia">¿En qué consiste la pexia ciliar o levantamiento de cejas?</button>
+                                        </h3>
+                                        <div class="accordion-collapse collapse" id="collapsePexia" aria-labelledby="headingPexia" data-bs-parent="#facialAccordion">
+                                            <div class="accordion-body">Eleva las cejas cuando hay descenso del tercio superior y mirada cansada. Se utilizan incisiones pequeñas en el cuero cabelludo o técnicas endoscópicas para reposicionar los tejidos sin cambiar la expresión.</div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="headingRino">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRino" aria-expanded="false" aria-controls="collapseRino">¿En qué consiste la rinoplastia?</button>
+                                        </h3>
+                                        <div class="accordion-collapse collapse" id="collapseRino" aria-labelledby="headingRino" data-bs-parent="#facialAccordion">
+                                            <div class="accordion-body">Refina dorso, punta y tabique nasal para mejorar proporciones faciales y, cuando es necesario, optimizar la respiración. La planificación busca armonía con mentón, labios y frente respetando la identidad del paciente.</div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="headingRinoRev">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRinoRev" aria-expanded="false" aria-controls="collapseRinoRev">¿En qué consiste la rinoplastia revisional?</button>
+                                        </h3>
+                                        <div class="accordion-collapse collapse" id="collapseRinoRev" aria-labelledby="headingRinoRev" data-bs-parent="#facialAccordion">
+                                            <div class="accordion-body">Corrige secuelas estéticas o funcionales de cirugías nasales previas mediante injertos estructurales y refinamiento de tejidos. Requiere análisis detallado de cicatrices internas y uso preciso de cartílago para recuperar soporte y simetría.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="corporal" class="mb-5">
+                                <div class="d-flex align-items-center mb-2">
+                                    <div class="badge bg-primary rounded-pill me-2">Cirugía estética corporal</div>
+                                    <span class="text-muted">Contornos equilibrados y reparación posbariátrica</span>
+                                </div>
+                                <div class="accordion faq-accordion" id="corporalAccordion">
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="headingAbd">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAbd" aria-expanded="false" aria-controls="collapseAbd">¿En qué consiste la abdominoplastia?</button>
+                                        </h3>
+                                        <div class="accordion-collapse collapse" id="collapseAbd" aria-labelledby="headingAbd" data-bs-parent="#corporalAccordion">
+                                            <div class="accordion-body">Retira exceso de piel y grasa del abdomen medio e inferior, refuerza los músculos rectos y reposiciona el ombligo. Indicada tras embarazos o grandes cambios de peso para recuperar firmeza y cintura.</div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="headingGluteo">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGluteo" aria-expanded="false" aria-controls="collapseGluteo">¿En qué consiste la gluteoplastia?</button>
+                                        </h3>
+                                        <div class="accordion-collapse collapse" id="collapseGluteo" aria-labelledby="headingGluteo" data-bs-parent="#corporalAccordion">
+                                            <div class="accordion-body">Modela y proyecta los glúteos mediante implantes o lipoinyección estratégica, mejorando la curva lumboglútea. Se busca simetría y naturalidad apoyándose en la anatomía de la pelvis.</div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="headingPectoral">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePectoral" aria-expanded="false" aria-controls="collapsePectoral">¿En qué consiste el implante de pectorales?</button>
+                                        </h3>
+                                        <div class="accordion-collapse collapse" id="collapsePectoral" aria-labelledby="headingPectoral" data-bs-parent="#corporalAccordion">
+                                            <div class="accordion-body">Coloca prótesis anatómicas bajo el músculo pectoral para aportar volumen y definición torácica en pacientes con hipoplasia o asimetrías. Las incisiones se sitúan en el pliegue axilar para permanecer discretas.</div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="headingMuslos">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMuslos" aria-expanded="false" aria-controls="collapseMuslos">¿En qué consiste el lifting de muslos?</button>
+                                        </h3>
+                                        <div class="accordion-collapse collapse" id="collapseMuslos" aria-labelledby="headingMuslos" data-bs-parent="#corporalAccordion">
+                                            <div class="accordion-body">Resección de piel y grasa en la cara interna de los muslos para reducir flacidez y roce. Las cicatrices se planifican en ingles o pliegues internos para poder ocultarlas.</div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="headingLipoabd">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLipoabd" aria-expanded="false" aria-controls="collapseLipoabd">¿En qué consiste la lipoabdominoplastia?</button>
+                                        </h3>
+                                        <div class="accordion-collapse collapse" id="collapseLipoabd" aria-labelledby="headingLipoabd" data-bs-parent="#corporalAccordion">
+                                            <div class="accordion-body">Combina lipoaspiración de flancos y abdomen con resección de piel para definir la cintura y cerrar diástasis muscular. Reduce edema y mejora el perfil sin comprometer la seguridad vascular de la pared abdominal.</div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="headingPostbari">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePostbari" aria-expanded="false" aria-controls="collapsePostbari">¿En qué consiste la lipoabdominoplastia postbariátrica?</button>
+                                        </h3>
+                                        <div class="accordion-collapse collapse" id="collapsePostbari" aria-labelledby="headingPostbari" data-bs-parent="#corporalAccordion">
+                                            <div class="accordion-body">Dirigida a pacientes tras grandes pérdidas de peso; combina lipoaspiración, resección amplia de piel y refuerzo muscular para eliminar faldones y mejorar la postura. Requiere planificación cuidadosa de cicatrices en cinturón abdominal.</div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="headingLipoMasculina">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLipoMasculina" aria-expanded="false" aria-controls="collapseLipoMasculina">¿En qué consiste la lipoescultura abdominal masculina?</button>
+                                        </h3>
+                                        <div class="accordion-collapse collapse" id="collapseLipoMasculina" aria-labelledby="headingLipoMasculina" data-bs-parent="#corporalAccordion">
+                                            <div class="accordion-body">Define el abdomen masculino marcando líneas musculares (high-definition) mediante lipoaspiración selectiva y transferencia de grasa cuando es necesario. Busca un resultado atlético manteniendo proporciones naturales.</div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="headingLipoiny">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLipoiny" aria-expanded="false" aria-controls="collapseLipoiny">¿En qué consiste la lipoinyección corporal?</button>
+                                        </h3>
+                                        <div class="accordion-collapse collapse" id="collapseLipoiny" aria-labelledby="headingLipoiny" data-bs-parent="#corporalAccordion">
+                                            <div class="accordion-body">Utiliza grasa propia procesada para aumentar o dar forma a glúteos, caderas u otras áreas que requieren volumen. La grasa se obtiene de zonas con exceso mediante lipoaspiración y se coloca en planos seguros para mejorar la silueta.</div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="headingLipoma">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLipoma" aria-expanded="false" aria-controls="collapseLipoma">¿En qué consiste la extirpación de lipomas?</button>
+                                        </h3>
+                                        <div class="accordion-collapse collapse" id="collapseLipoma" aria-labelledby="headingLipoma" data-bs-parent="#corporalAccordion">
+                                            <div class="accordion-body">Resección quirúrgica de tumores grasos benignos que generan bultos o molestia. Se realiza mediante incisiones pequeñas, preservando nervios y dejando cicatrices discretas.</div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="headingLipoescultura">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLipoescultura" aria-expanded="false" aria-controls="collapseLipoescultura">¿En qué consiste la liposucción o lipoescultura?</button>
+                                        </h3>
+                                        <div class="accordion-collapse collapse" id="collapseLipoescultura" aria-labelledby="headingLipoescultura" data-bs-parent="#corporalAccordion">
+                                            <div class="accordion-body">Moldea el contorno corporal retirando grasa localizada con cánulas finas y soluciones infiltrativas seguras. Puede combinarse con marcación abdominal o transferencia de grasa para equilibrar proporciones.</div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="headingPantorrilla">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePantorrilla" aria-expanded="false" aria-controls="collapsePantorrilla">¿En qué consiste la prótesis de pantorrillas?</button>
+                                        </h3>
+                                        <div class="accordion-collapse collapse" id="collapsePantorrilla" aria-labelledby="headingPantorrilla" data-bs-parent="#corporalAccordion">
+                                            <div class="accordion-body">Implanta prótesis de silicona en el compartimento subfascial de la pierna para aumentar el volumen gemelar y corregir asimetrías. La incisión se realiza en el pliegue poplíteo para ocultar la cicatriz.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="genital" class="mb-5">
+                                <div class="d-flex align-items-center mb-2">
+                                    <div class="badge bg-primary rounded-pill me-2">Cirugía genital</div>
+                                    <span class="text-muted">Soluciones funcionales y estéticas personalizadas</span>
+                                </div>
+
+                                <div class="card border-0 bg-light mb-3" id="genital-femenina">
+                                    <div class="card-body py-3">
+                                        <h6 class="fw-bold mb-1">Femenina</h6>
+                                        <div class="accordion faq-accordion" id="genitalFemAccordion">
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="headingLabiosMayoresPlus">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLabiosMayoresPlus" aria-expanded="false" aria-controls="collapseLabiosMayoresPlus">¿En qué consiste el aumento de labios mayores?</button>
+                                                </h3>
+                                                <div class="accordion-collapse collapse" id="collapseLabiosMayoresPlus" aria-labelledby="headingLabiosMayoresPlus" data-bs-parent="#genitalFemAccordion">
+                                                    <div class="accordion-body">Aporta volumen y turgencia a los labios mayores mediante grasa autóloga o ácido hialurónico, mejorando la protección y estética vulvar. Se realiza con cánulas finas para evitar cicatrices visibles.</div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="headingLabioplastia">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLabioplastia" aria-expanded="false" aria-controls="collapseLabioplastia">¿En qué consiste la labioplastia o ninfoplastia?</button>
+                                                </h3>
+                                                <div class="accordion-collapse collapse" id="collapseLabioplastia" aria-labelledby="headingLabioplastia" data-bs-parent="#genitalFemAccordion">
+                                                    <div class="accordion-body">Reduce y simetriza los labios menores cuando provocan molestias o exposición excesiva. Se cuida la preservación de la sensibilidad y se usan suturas reabsorbibles para una recuperación rápida.</div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="headingPtosisPubisFem">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePtosisPubisFem" aria-expanded="false" aria-controls="collapsePtosisPubisFem">¿En qué consiste la corrección de ptosis del pubis o monte de Venus?</button>
+                                                </h3>
+                                                <div class="accordion-collapse collapse" id="collapsePtosisPubisFem" aria-labelledby="headingPtosisPubisFem" data-bs-parent="#genitalFemAccordion">
+                                                    <div class="accordion-body">Eleva y reduce el volumen del monte de Venus cuando hay caída o exceso adiposo, logrando un perfil más plano en ropa ajustada. Puede asociarse a lipoaspiración suave y resección cutánea mínima.</div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="headingReconLabios">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseReconLabios" aria-expanded="false" aria-controls="collapseReconLabios">¿En qué consiste la reconstrucción de labios menores?</button>
+                                                </h3>
+                                                <div class="accordion-collapse collapse" id="collapseReconLabios" aria-labelledby="headingReconLabios" data-bs-parent="#genitalFemAccordion">
+                                                    <div class="accordion-body">Repara desgarros, cicatrices o asimetrías previas en los labios menores mediante colgajos locales y suturas finas. El objetivo es recuperar confort, simetría y sensibilidad.</div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="headingReduccionMayores">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseReduccionMayores" aria-expanded="false" aria-controls="collapseReduccionMayores">¿En qué consiste la reducción de labios mayores?</button>
+                                                </h3>
+                                                <div class="accordion-collapse collapse" id="collapseReduccionMayores" aria-labelledby="headingReduccionMayores" data-bs-parent="#genitalFemAccordion">
+                                                    <div class="accordion-body">Retira el excedente de piel y grasa de los labios mayores cuando hay hipertrofia o peso excesivo. Se modela el borde para lograr un contorno más ligero y armonioso.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card border-0 bg-light mb-4" id="genital-masculina">
+                                    <div class="card-body py-3">
+                                        <h6 class="fw-bold mb-1">Masculina</h6>
+                                        <div class="accordion faq-accordion" id="genitalMasAccordion">
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="headingPeneOculto">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePeneOculto" aria-expanded="false" aria-controls="collapsePeneOculto">¿En qué consiste la corrección de pene oculto?</button>
+                                                </h3>
+                                                <div class="accordion-collapse collapse" id="collapsePeneOculto" aria-labelledby="headingPeneOculto" data-bs-parent="#genitalMasAccordion">
+                                                    <div class="accordion-body">Libera el pene sepultado por exceso de grasa o piel suprapúbica, fijando la base y eliminando el tejido redundante. Mejora la exposición del eje y facilita la higiene y la función sexual.</div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="headingPtosisPubisMasc">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePtosisPubisMasc" aria-expanded="false" aria-controls="collapsePtosisPubisMasc">¿En qué consiste la corrección de ptosis del pubis masculina?</button>
+                                                </h3>
+                                                <div class="accordion-collapse collapse" id="collapsePtosisPubisMasc" aria-labelledby="headingPtosisPubisMasc" data-bs-parent="#genitalMasAccordion">
+                                                    <div class="accordion-body">Reduce el exceso de piel y grasa del monte púbico masculino para elevarlo y mejorar el contorno inguinal. Puede combinarse con liposucción para un perfil más plano y cómodo.</div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h3 class="accordion-header" id="headingEscroto">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEscroto" aria-expanded="false" aria-controls="collapseEscroto">¿En qué consiste la reducción de escroto o escrotoplastia?</button>
+                                                </h3>
+                                                <div class="accordion-collapse collapse" id="collapseEscroto" aria-labelledby="headingEscroto" data-bs-parent="#genitalMasAccordion">
+                                                    <div class="accordion-body">Resección de piel excedente y refuerzo de la base escrotal cuando hay peso o laxitud que causa molestias. Mejora la posición testicular, reduce la sudoración y facilita la actividad física.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="mamas" class="mb-5">
+                                <div class="d-flex align-items-center mb-2">
+                                    <div class="badge bg-primary rounded-pill me-2">Cirugía de mamas</div>
+                                    <span class="text-muted">Equilibrio de volumen, forma y posición</span>
+                                </div>
+                                <div class="accordion faq-accordion" id="mamasAccordion">
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="headingGinecomastia">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGinecomastia" aria-expanded="false" aria-controls="collapseGinecomastia">¿En qué consiste la ginecomastia o reducción de mama masculina?</button>
+                                        </h3>
+                                        <div class="accordion-collapse collapse" id="collapseGinecomastia" aria-labelledby="headingGinecomastia" data-bs-parent="#mamasAccordion">
+                                            <div class="accordion-body">Elimina el exceso glandular y graso del tórax masculino mediante resección directa y lipoaspiración, dejando cicatrices discretas en el borde areolar. Recupera un pecho plano y firme.</div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="headingAumento">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAumento" aria-expanded="false" aria-controls="collapseAumento">¿En qué consiste la mamoplastia de aumento?</button>
+                                        </h3>
+                                        <div class="accordion-collapse collapse" id="collapseAumento" aria-labelledby="headingAumento" data-bs-parent="#mamasAccordion">
+                                            <div class="accordion-body">Coloca implantes de silicona o grasa autóloga para aumentar el volumen mamario y mejorar la proyección. Se selecciona el plano (subglandular o submuscular) y el tamaño según la anatomía y expectativas de la paciente.</div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="headingMastopexia">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMastopexia" aria-expanded="false" aria-controls="collapseMastopexia">¿En qué consiste la mastopexia o levantamiento de senos?</button>
+                                        </h3>
+                                        <div class="accordion-collapse collapse" id="collapseMastopexia" aria-labelledby="headingMastopexia" data-bs-parent="#mamasAccordion">
+                                            <div class="accordion-body">Eleva y compacta el tejido mamario caído, reposicionando la areola y retirando piel excedente. Puede asociarse a implantes o lipoinyección para recuperar plenitud en el polo superior.</div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="headingReduccion">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseReduccion" aria-expanded="false" aria-controls="collapseReduccion">¿En qué consiste la reducción de mamas?</button>
+                                        </h3>
+                                        <div class="accordion-collapse collapse" id="collapseReduccion" aria-labelledby="headingReduccion" data-bs-parent="#mamasAccordion">
+                                            <div class="accordion-body">Disminuye el volumen mamario retirando tejido glandular, grasa y piel para aliviar dolor cervical, mejorar postura y lograr un pecho proporcionado. Se preserva la sensibilidad areolar y, cuando es posible, la capacidad de lactancia.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="dermo" class="mb-5">
+                                <div class="d-flex align-items-center mb-2">
+                                    <div class="badge bg-primary rounded-pill me-2">Dermoestética</div>
+                                    <span class="text-muted">Tratamientos mínimamente invasivos</span>
+                                </div>
+                                <div class="accordion faq-accordion" id="dermoAccordion">
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="headingBotox">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBotox" aria-expanded="false" aria-controls="collapseBotox">¿En qué consiste el tratamiento con toxina botulínica (Botox)?</button>
+                                        </h3>
+                                        <div class="accordion-collapse collapse" id="collapseBotox" aria-labelledby="headingBotox" data-bs-parent="#dermoAccordion">
+                                            <div class="accordion-body">Relaja selectivamente músculos faciales para suavizar arrugas dinámicas en frente, entrecejo y patas de gallo. Se aplica con microinyecciones, con efecto progresivo y natural.</div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="headingPerfilado">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePerfilado" aria-expanded="false" aria-controls="collapsePerfilado">¿En qué consiste el perfilado de labios?</button>
+                                        </h3>
+                                        <div class="accordion-collapse collapse" id="collapsePerfilado" aria-labelledby="headingPerfilado" data-bs-parent="#dermoAccordion">
+                                            <div class="accordion-body">Define el contorno labial con ácido hialurónico de baja viscosidad para resaltar el arco de Cupido y mejorar la hidratación. Se prioriza la naturalidad y el equilibrio con el tercio inferior del rostro.</div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="headingRellenos">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRellenos" aria-expanded="false" aria-controls="collapseRellenos">¿En qué consiste el uso de rellenos faciales con ácido hialurónico?</button>
+                                        </h3>
+                                        <div class="accordion-collapse collapse" id="collapseRellenos" aria-labelledby="headingRellenos" data-bs-parent="#dermoAccordion">
+                                            <div class="accordion-body">Restaura volumen y proyección en pómulos, surcos, mentón o ojeras con geles de ácido hialurónico adaptados a cada zona. Mejora la hidratación profunda y puede moldearse para lograr simetría.</div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header" id="headingRinomodelacion">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRinomodelacion" aria-expanded="false" aria-controls="collapseRinomodelacion">¿En qué consiste la rinomodelación?</button>
+                                        </h3>
+                                        <div class="accordion-collapse collapse" id="collapseRinomodelacion" aria-labelledby="headingRinomodelacion" data-bs-parent="#dermoAccordion">
+                                            <div class="accordion-body">Moldea la nariz sin cirugía mediante infiltración de ácido hialurónico para suavizar giba, levantar la punta o corregir asimetrías menores. Ofrece resultados inmediatos y reversibles con control de seguridad.</div>
                                         </div>
                                     </div>
                                 </div>
@@ -274,24 +497,6 @@
                 </div>
             </section>
         </main>
-        <!-- Footer-->
-        <footer class="bg-dark py-4 mt-auto">
-            <div class="container px-5">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0 text-white">® 2025 Dr. Luciano Stricker – creado por Felipe Andrés Del Curto.</div></div>
-                    <div class="col-auto">
-                        <a class="link-light small" href="#!">Instagram</a>
-                        <span class="text-white mx-1">&middot;</span>
-                        <a class="link-light small" href="faq.html">Preguntas Frecuentes</a>
-                        <span class="text-white mx-1">&middot;</span>
-                        <a class="link-light small" href="#!">Contacto</a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
     </body>
 </html>
