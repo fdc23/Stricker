@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const discipline = waDiscipline ? waDiscipline.value.trim() : '';
       const intent = waIntent ? waIntent.value : 'consultar';
       const motive = waType ? waType.value : 'duda';
-      const message = `Hola Bastián, me comunico contigo para ${intent} una ${motive} para ${discipline} con el Dr. Luciano Stricker.`;
+      const message = `Hola Bastián, me comunico contigo para *${intent}* una *${motive}* para *${discipline}* con el Dr. Luciano Stricker.`;
       const url = `https://wa.me/56949625291?text=${encodeURIComponent(message)}`;
       window.open(url, '_blank', 'noopener');
       closeWaOverlay();
