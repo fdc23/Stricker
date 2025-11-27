@@ -10993,3 +10993,115 @@ html {
         height: 64px; /* como tus imágenes son 1:1, esto funciona perfecto */
         object-fit: cover; /* por si alguna no es exactamente cuadrada */
     }
+
+/* === Estilos para el currículum === */
+.cv-hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.cv-hero .bg-animation-layer {
+  opacity: 0.2;
+}
+
+.cv-avatar {
+  max-width: 260px;
+  margin: 0 auto;
+  border: 6px solid rgba(255, 255, 255, 0.35);
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+
+.cv-section {
+  position: relative;
+}
+
+.cv-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 992px) {
+  .cv-grid {
+    grid-template-columns: 1fr 2fr;
+    align-items: start;
+  }
+}
+
+.cv-card {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.05);
+  border: 1px solid #eaeaea;
+}
+
+.cv-card-title {
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+.cv-list {
+  padding-left: 1.25rem;
+  margin-bottom: 0;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.cv-timeline {
+  position: relative;
+  display: grid;
+  gap: 1.25rem;
+  padding-left: 1.5rem;
+}
+
+.cv-timeline:before {
+  content: "";
+  position: absolute;
+  top: 0.35rem;
+  left: 0.2rem;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(214, 51, 132, 0.5), rgba(214, 51, 132, 0.1));
+}
+
+.cv-timeline-item {
+  position: relative;
+  padding-left: 1rem;
+}
+
+.cv-timeline-item:before {
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  left: -1.2rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background: #d63384;
+  box-shadow: 0 0 0 6px rgba(214, 51, 132, 0.1);
+}
+
+.cv-timeline-date {
+  font-weight: 700;
+  color: #d63384;
+  margin-bottom: 0.35rem;
+}
+
+.cv-timeline-content h3 {
+  font-weight: 700;
+}
+
+.cv-timeline-content p {
+  margin-bottom: 0;
+  color: #555;
+}
+
+.cv-main article + article {
+  margin-top: 1.25rem;
+}
+
+.cv-sidebar article + article {
+  margin-top: 1.25rem;
+}
